@@ -1,51 +1,24 @@
 ---------------------------------------------------------------
-[ 2018-05-25T09:34:51+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)[C:\wamp64\www\pay\app\pay\service\AliPay.php:16]
+[ 2018-05-25T13:58:47+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [8]未定义数组索引: OrderID[C:\wamp64\www\pay\app\pay\service\Pay.php:12]
 ---------------------------------------------------------------
-[ 2018-05-25T09:35:03+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)[C:\wamp64\www\pay\app\pay\service\AliPay.php:16]
+[ 2018-05-25T13:59:09+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [8]未定义数组索引: OrderId[C:\wamp64\www\pay\app\pay\service\Pay.php:12]
 ---------------------------------------------------------------
-[ 2018-05-25T09:40:34+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)[C:\wamp64\www\pay\app\pay\service\AliPay.php:16]
+[ 2018-05-25T14:06:01+08:00 ] 127.0.0.1 POST //pay/api/5a570d64428ca
+[ error ] [8]未定义数组索引: orderID[C:\wamp64\www\pay\app\pay\service\Pay.php:58]
 ---------------------------------------------------------------
-[ 2018-05-25T09:41:57+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=1111&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [4]语法错误: unexpected ','[C:\wamp64\www\pay\app\pay\service\AliPay.php:16]
+[ 2018-05-25T14:06:50+08:00 ] 127.0.0.1 POST //pay/api/5a570d64428ca
+[ error ] [8]未定义数组索引: orderID[C:\wamp64\www\pay\app\pay\service\Pay.php:58]
 ---------------------------------------------------------------
-[ 2018-05-25T09:42:14+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=111221&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [8]未定义数组索引: notify_url[C:\wamp64\www\pay\app\pay\service\AliPay.php:21]
+[ 2018-05-25T14:06:57+08:00 ] 127.0.0.1 POST //pay/api/5a570d64428ca
+[ error ] [8]未定义数组索引: orderID[C:\wamp64\www\pay\app\pay\service\Pay.php:58]
 ---------------------------------------------------------------
-[ 2018-05-25T09:42:59+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=2111221&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [8]Undefined property: app\pay\service\AliPay::$bizContentarr[C:\wamp64\www\pay\app\pay\service\AliPay.php:22]
+[ 2018-05-25T15:26:52+08:00 ] 127.0.0.1 POST /pay/api/5b07b9e633017
+[ error ] [1]Class 'controller\PayRetService' not found[C:\wamp64\www\pay\app\api\controller\Alipay.php:12]
 ---------------------------------------------------------------
-[ 2018-05-25T09:43:24+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=2111111221&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [8]Undefined property: app\pay\service\AliPay::$biz_content[C:\wamp64\www\pay\app\pay\service\AliPay.php:22]
+[ 2018-05-25T15:26:59+08:00 ] 127.0.0.1 POST /pay/api/5b07b9e633017
+[ error ] [1]Class 'controller\PayRetService' not found[C:\wamp64\www\pay\app\api\controller\Alipay.php:12]
 ---------------------------------------------------------------
-[ 2018-05-25T09:43:52+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=211111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [1]Using $this when not in object context[C:\wamp64\www\pay\app\common.php:283]
----------------------------------------------------------------
-[ 2018-05-25T09:44:19+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11211111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded[C:\wamp64\www\pay\thinkphp\library\think\response\Json.php:39]
----------------------------------------------------------------
-[ 2018-05-25T09:57:10+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11211111111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [2]Illegal string offset 'hash'[C:\wamp64\www\pay\app\util\ApiLog.php:50]
----------------------------------------------------------------
-[ 2018-05-25T09:57:42+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=1121111111111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
-[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded[C:\wamp64\www\pay\thinkphp\library\think\response\Json.php:39]
----------------------------------------------------------------
-[ 2018-05-25T10:11:21+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [8]未定义数组索引: Merchant_url[C:\wamp64\www\pay\app\pay\service\Pay.php:51]
----------------------------------------------------------------
-[ 2018-05-25T10:28:21+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
-[ error ] [8]未定义数组索引: create_at[C:\wamp64\www\pay\runtime\temp\01d0c57b148e614022d1c460d667d2c7.php:74]
----------------------------------------------------------------
-[ 2018-05-25T10:29:47+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
-[ error ] [8]未定义数组索引: create_at[C:\wamp64\www\pay\runtime\temp\01d0c57b148e614022d1c460d667d2c7.php:74]
----------------------------------------------------------------
-[ 2018-05-25T10:43:32+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [8]未定义数组索引: key[C:\wamp64\www\pay\app\pay\service\Pay.php:48]
----------------------------------------------------------------
-[ 2018-05-25T10:43:35+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [8]未定义数组索引: key[C:\wamp64\www\pay\app\pay\service\Pay.php:48]
----------------------------------------------------------------
-[ 2018-05-25T10:43:40+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
-[ error ] [8]未定义数组索引: key[C:\wamp64\www\pay\app\pay\service\Pay.php:48]
+[ 2018-05-25T15:27:33+08:00 ] 127.0.0.1 POST /pay/api/5b07b9e633017
+[ error ] [1]Class 'service\Db' not found[C:\wamp64\www\pay\extend\service\NotifyService.php:27]

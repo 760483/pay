@@ -20,7 +20,7 @@ return [
         // pay 5a570d64428ca
         '5a570d64428ca' => [
             'api/Index/index',
-            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+            ['method' => 'post', 'after_behavior' => $afterBehavior]
         ],
         // 获取AccessToken 5a60c77b79875
         '5a60c77b79875' => [
@@ -66,6 +66,11 @@ return [
         '5a6ad401210c7' => [
             'api/Tool/getDistrictListByCid',
             ['method' => 'get', 'after_behavior' => $afterBehavior]
+        ],
+        // 测试 5b07b9e633017
+        '5b07b9e633017' => [
+            'api/Alipay/notify',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
         ],
 
         // 接口Hash异常跳转

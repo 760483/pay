@@ -9,15 +9,15 @@ namespace app\pay\service;
 		
 		$biz_content=array(
 			'out_trade_no'=>$order['id'],
-			'total_amount'=>$order['trademoney'],
-			'subject'=>$order['ProductName']
+			'total_amount'=>$order['tradeMoney'],
+			'subject'=>$order['productName']
 		);
 		
 	 $config['timestamp']=date( $config['timestamp'],time());
 		
 		$param=array_merge($config,array(
-			'app_id'=>$channelRet['app_id'], 			 
-			'notify_url'=>$channelRet['notify_url'],
+			'app_id'=>$channelRet['appId'], 			 
+			'notify_url'=>$channelRet['cNotifyUrl'],
 			'biz_content'=>json_encode($biz_content,JSON_UNESCAPED_UNICODE) 
 		)); 
 	//	$ret= postRequest($channelRet['url'],$param);

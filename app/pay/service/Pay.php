@@ -1,6 +1,7 @@
 <?php
 namespace app\pay\service;
  use Think\Db;
+ use app\util\ApiLog;
   class Pay   {
 	 public function pay($args){
 		  $order=db("pay_order");
@@ -8,13 +9,13 @@ namespace app\pay\service;
 		
 		 //{"code":1,"data":{"PayID":"2","OrderID":"1526980477","OrderMoney":"10","goods_name":"demo","Merchant_url":"http%3A%2F%2Fwww.baidu.com","Return_url":"http%3A%2F%2Fwww.baidu.com","OrderDate":"20180522171437","sign":"70dbe7e85ffb3791cae800787f9c3a4c"},"msg":""} 
 		 
-		 if( $order->where('OrderID',$args['OrderID'])->select()==null){
+		 if( $order->where('OrderID',$args['orderId'])->select()==null){
 			 
 		$channelRet= Db::table('pay_channellink')
 				->alias('a')
 				->join('pay_merchannel b','a.merCId = b.id')
 				->join('pay_channel c','a.cId = c.id')
-				->where(array('b.id'=>$args['app_id']))
+				->where(array('b.id'=>$args['appId']))
 				->field(['b.id'=>'mId',
 						'b.name'=>'mName',
 						'b.parentId'=>'mParentId',
@@ -30,10 +31,10 @@ namespace app\pay\service;
 						'c.channelRate'=>'channelRate',
 						'c.api'=>'api',						 
 						'a.cId'=>'cId',
-						'c.appId'=>'app_id',
+						'c.appId'=>'appId',
 						'c.url'=>'url',
 						'c.param'=>'param',
-						'c.notify_url'=>'notify_url'
+						'c.notify_url'=>'cNotifyUrl'
 				])
 				->find(); 
 					
@@ -42,25 +43,32 @@ namespace app\pay\service;
 				  return array("msg"=>'通道未配置');
 			 }
 			 
-			 if($channelRet['mKey']!=$args['key']){
-				 return array("msg"=>'key不正确');
+			 $sign=$args['sign'];
+			 unset($args['sign']);
+			$preArr = array_merge($args, ['key' => $channelRet['mKey']]);  
+			 ksort($preArr); 
+			$preArr= http_build_query($preArr);
+		 
+			 
+			 if(md5(urldecode($preArr))!= $sign){
+				 return array("msg"=>'签名不正确');
 				 
 			 }
 			 
-			$data['OrderID'] =$args['OrderID'];
-			 $data['UserID']=$channelRet['mUId'];
-			$data['OrderDate'] =$args['OrderDate'];
-			$data['trademoney'] =$args['OrderMoney'];
-			$data['OrderMoney'] =$args['OrderMoney'];
-			$data['mermoney']=$args['OrderMoney']*(1-$channelRet["mRate"]);
-			$data['channelmoney']=$args['OrderMoney']*$channelRet["channelRate"];
-			$data['RateMoney']=$args['OrderMoney']*($channelRet["mRate"]-$channelRet["channelRate"]);
+			$data['orderId'] =$args['orderId'];
+			 $data['userId']=$channelRet['mUId'];
+			$data['orderDate'] =$args['orderDate'];
+			$data['tradeMoney'] =$args['orderMoney'];
+			$data['orderMoney'] =$args['orderMoney'];
+			$data['merMoney']=$args['orderMoney']*(1-$channelRet["mRate"]);
+			$data['channelMoney']=$args['orderMoney']*$channelRet["channelRate"];
+			$data['rateMoney']=$args['orderMoney']*($channelRet["mRate"]-$channelRet["channelRate"]);
 			$data['channelId']=$channelRet['cId'];
-			$data['return_url'] =$args['return_url'];
-			$data['notify_url'] =$args['notify_url'];
+			$data['returnUrl'] =$args['returnUrl'];
+			$data['notifyUrl'] =$args['notifyUrl'];
 			$data['cTime'] =time();
 			$data['mTime'] =time();
-			$data['ProductName']=$args['ProductName']; 
+			$data['productName']=$args['productName']; 
 			$data['bank']=$args['bank'];
 			  			
 			$ret=$order->insertGetId($data);  

@@ -1,5 +1,5 @@
 <?php
-namespace app\api\controller;
+namespace app\notify\controller;
 use controller\BasicApi;
 use service\PayRetService;
 /**
@@ -9,8 +9,8 @@ class Alipay  extends  BasicApi{
 	 
 	 public function notify()
     {
-		PayRetService::success(1);
-		 
+		PayRetService::success(130);
+		 return 1;
 	}
 	  //表单提交支付
      
