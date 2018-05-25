@@ -1,0 +1,81 @@
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
+ 
+    <div class="layui-form-item">
+        <label class="layui-form-label">通道名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" value='{$vo.name|default=""}' required="required" title="请通道名称" placeholder="请通道名称" class="layui-input">
+        </div>
+    </div>
+
+	
+	<div class="layui-form-item">
+        <label class="layui-form-label">上级</label>
+        <div class="layui-input-block">
+            <input type="text" name="parentId" value='{$vo.parentId|default=""}' required="required" title="上级" placeholder="请上级名称" class="layui-input">
+        </div>
+    </div>
+ 
+	
+	
+    <div class="layui-form-item">
+        <label class="layui-form-label label-required">用户</label>
+        <div class="col-xs-3">
+            <select name="uId" class="input-sm form-control">
+                <option value="">- 请选择 -</option>
+                {volist name="vo.user" id='v'}
+				  <option   {if isset($vo.uId)&&$vo.uId==$v.id }selected{/if} value="{$v.id}">-  {$v.username} -</option>
+				{/volist}
+            </select>
+        </div>
+
+       
+    </div>
+	
+	<div class="layui-form-item">
+        <label class="layui-form-label">url</label>
+        <div class="layui-input-block">
+            <input type="text" name="url" value='{$vo.url|default=""}' required="required" title="url" placeholder="请输入url" class="layui-input">
+        </div>
+    </div>
+	
+	 
+	<div class="layui-form-item">
+        <label class="layui-form-label">key</label>
+        <div class="layui-input-block">
+            <input type="text" name="" readonly value='{$vo.key|default=""}' required="required" title="key" placeholder="请输入key" class="layui-input">
+       <p class="help-block">系统自动生成，不允许修改</p>
+	   </div>
+    </div>
+ 
+  
+	 <div class="layui-form-item">
+        <label class="layui-form-label">rate</label>
+        <div class="layui-input-block">
+            <input type="text" name="rate" value='{$vo.rate|default=""}' required="required" title="rate" placeholder="rate" class="layui-input">
+        </div>
+    </div>
+	<div class="layui-form-item">
+        <label class="layui-form-label">status</label>
+        <div class="layui-input-block">
+            <input type="text" name="status" value='{$vo.status|default=""}' required="required" title="status" placeholder="status" class="layui-input">
+        </div>
+    </div>
+	
+	
+ 
+    <div class="layui-form-item">
+        <label class="layui-form-label"> 描述</label>
+        <div class="layui-input-block">
+            <textarea placeholder="请输入 描述" required="required" title="请输入 描述" class="layui-textarea" name="descript">{$vo.descript|default=""}</textarea>
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+    </div>
+   <script>window.form.render();</script>
+</form>

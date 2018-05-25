@@ -1,0 +1,109 @@
+{extend name='extra@admin/content'}
+
+{block name="button"}
+<div class="nowrap pull-right" style="margin-top:10px">
+    <button data-modal='{:url("$classuri/add")}' data-title="添加权限" class='layui-btn layui-btn-small'>
+        <i class='fa fa-plus'></i> 添加权限
+    </button>
+    <button data-update data-field='delete' data-action='{:url("$classuri/del")}'
+            class='layui-btn layui-btn-small layui-btn-danger'>
+        <i class='fa fa-remove'></i> 删除权限
+    </button>
+</div>
+{/block}
+
+{block name="content"}
+<form onsubmit="return false;" data-auto="true" method="post">
+    {if empty($list)}
+    <p class="help-block text-center well">没 有 记 录 哦！</p>
+    {else}
+    <input type="hidden" value="resort" name="action"/>
+    <table class="layui-table" lay-skin="line" lay-size="sm">
+        <thead>
+        <tr>
+            <th class='list-table-check-td'>
+                <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
+            </th>
+            <th class='list-table-sort-td'>
+                <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">ID</button>
+            </th>
+            <th class='text-center'>名称</th>
+            <th class='text-center'>上级ID</th>
+            <th class='text-center'>用户ID</th>
+            <th class='text-center'>url</th>
+            <th class='text-center'>描述</th>
+			<th class='text-center'>创建时间</th>
+			<th class='text-center'>上次更改</th>
+			<th class='text-center'>key</th>
+			<th class='text-center'>channelRate</th>		 
+			<th class='text-center'>api</th>
+			<th class='text-center'>param</th>
+				<th class='text-center'>通知地址</th>
+			<th class='text-center'>返回地址</th>
+				<th class='text-center'>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $list as $key=>$vo}
+		
+        <tr>
+		
+		  <th class='list-table-check-td'>
+                <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
+            </th>
+            <td class='list-table-check-td'>
+			{$vo.id}
+                
+            </td>
+            <td class='list-table-sort-td'>
+                {$vo.name}
+            </td>
+            <td class='text-center'>{$vo.parentId}</td>
+            <td class='text-center'>{$vo.createId }</td>
+			<td class='text-center'>{$vo.url }</td>
+			<td class='text-center'>{$vo.descript }</td>        
+            <td class="text-center nowrap">{$vo.create_time|format_time}</td>
+			<td class="text-center nowrap">{$vo.update_time|format_time}</td>
+			<td class="text-center nowrap">{$vo.key}</td>
+			 <td class="text-center nowrap">{$vo.channelRate}</td>
+			  <td class="text-center nowrap">{$vo.param|cut_str}</td>
+			 <td class="text-center nowrap">{$vo.api}</td>
+			   <td class="text-center nowrap">{$vo.notify_url}</td>
+			 <td class="text-center nowrap">{$vo.return_url}</td>
+            <td class='text-center nowrap'>
+
+                {if auth("$classuri/edit")}
+                <span class="text-explode">|</span>
+                <a data-modal='{:url("$classuri/edit")}?id={$vo.id}' href="javascript:void(0)">编辑</a>
+                {/if}
+
+                {if auth("$classuri/apply")}
+                <span class="text-explode">|</span>
+                <a data-open='{:url("$classuri/apply")}?id={$vo.id}' href="javascript:void(0)">授权</a>
+                {/if}
+
+                {if $vo.status eq 1 and auth("$classuri/forbid")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='status' data-value='0' data-action='{:url("$classuri/forbid")}'
+                   href="javascript:void(0)">禁用</a>
+                {elseif auth("$classuri/resume")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='status' data-value='1' data-action='{:url("$classuri/resume")}'
+                   href="javascript:void(0)">启用</a>
+                {/if}
+
+                {if auth("$classuri/del")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'
+                   href="javascript:void(0)">删除</a>
+                {/if}
+
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page}</p>{/if}
+    {/if}
+</form>
+{/block}

@@ -1,0 +1,48 @@
+{
+    "name": "ThinkApiAdmin",
+    "description": "ThinkApiAdmin wechat&api Admin",
+    "type": "project",
+    "keywords": [
+        "framework",
+        "thinkphp",
+        "ThinkApiAdmin",
+        "wechat",
+        "RBAC",
+        "ORM",
+        "Api"
+    ],
+    "homepage": "http://demo.zwt520.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nh侬佪",
+            "email": "zwt0706@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "qiniu/php-sdk": "^7.0",
+        "zoujingli/wechat-php-sdk": "dev-master",
+        "zoujingli/ip2region": "^1.0",
+        "topthink/framework": "5.0.*",
+        "topthink/think-captcha": "^1.0",
+        "topthink/think-mongo": "^1.1",
+        "topthink/think-queue": "^1.0",
+        "endroid/qr-code": "^1.9",
+        "aliyuncs/oss-sdk-php": "^2.2",
+        "flc/dysms": "^1.0",
+        "zoujingli/pay-php-sdk": "^1.0",
+        "yuan1994/tp-mailer": "^0.2.4",
+        "topthink/think-worker": "^1.0",
+        "topthink/think-image": "^1.0",
+        "topthink/think-testing": "1.0.*",
+        "monolog/monolog": "^1.23",
+        "phpoffice/phpspreadsheet": "^1.2"
+    },
+    "extra": {
+        "think-path": "thinkphp"
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

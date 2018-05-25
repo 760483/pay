@@ -1,0 +1,1422 @@
+---------------------------------------------------------------
+[ 2018-05-25T09:33:53+08:00 ] 127.0.0.1 GET /pay/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122929s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.058718s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'index/index/index' LIMIT 1 [ RunTime:0.057602s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:33:55+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112345s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074494s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.074425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.074723s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.074852s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.074607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074948s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.075267s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:33:56+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098589s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066506s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/main' LIMIT 1 [ RunTime:0.066785s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.065204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065819s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.066663s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:00+08:00 ] 127.0.0.1 GET /pay/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100125s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066806s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.066081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.067749s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.066439s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:00+08:00 ] 127.0.0.1 GET /pay/admin/login/gt.html?t=1527212040379
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085723s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055680s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/gt' LIMIT 1 [ RunTime:0.054902s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:03+08:00 ] 127.0.0.1 GET /pay/wiki/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080919s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054664s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/login/index' LIMIT 1 [ RunTime:0.054079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.054808s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.053645s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:28+08:00 ] 127.0.0.1 POST /pay/wiki/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115062s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.081556s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/login/index' LIMIT 1 [ RunTime:0.075869s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_document` [ RunTime:0.077042s ]
+[ sql ] [ SQL ] SELECT * FROM `api_document` WHERE  `key` = '123456' LIMIT 1 [ RunTime:0.076030s ]
+[ sql ] [ SQL ] UPDATE `api_document`  SET `lastTime`=1527212068,`lastIp`='127.0.0.1'  WHERE  `id` = 1 [ RunTime:0.076986s ]
+[ sql ] [ SQL ] UPDATE `api_document`  SET `times`=`times`+1  WHERE  `id` = 1 [ RunTime:0.076010s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:31+08:00 ] 127.0.0.1 GET /pay/wiki.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095620s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064378s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/index' LIMIT 1 [ RunTime:0.064619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.064112s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `status` = 1  AND `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC [ RunTime:0.063615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.063551s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' LIMIT 1 [ RunTime:0.062956s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%2%' LIMIT 1 [ RunTime:0.063391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.063716s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063583s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:36+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098401s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066529s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.065821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065980s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.066994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.066018s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.068641s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.070246s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.066017s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.066319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066372s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065203s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:42+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111067s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.074588s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.074391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.075695s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.073927s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:51+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096934s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065017s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064688s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064863s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.065498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.065555s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111' [ RunTime:0.065135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.065109s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.065951s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('111' , '111' , 0.01 , 0.01 , 0.01 , 0.0006 , '11' , '11') [ RunTime:0.065257s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:34:55+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113394s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.076626s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.076152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076313s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.076219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075980s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.075213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.076629s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111' [ RunTime:0.077035s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:35:03+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097004s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065561s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065263s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064235s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064093s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.066451s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.064098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.064915s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.064100s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('1112' , '111' , 0.01 , 0.01 , 0.01 , 0.0006 , '11' , '11') [ RunTime:0.063916s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:00+08:00 ] 127.0.0.1 GET /pay/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082178s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056614s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.055087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055084s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054833s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:00+08:00 ] 127.0.0.1 GET /pay/admin/login/gt.html?t=1527212340335
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079712s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.053923s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/gt' LIMIT 1 [ RunTime:0.054329s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:04+08:00 ] 127.0.0.1 POST /pay/admin/login.html?spm=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083823s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055441s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.054497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.055776s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.055191s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at`='2018-05-25 09:39:03'  WHERE  `id` = 10000 [ RunTime:0.057808s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_num`=`login_num`+1  WHERE  `id` = 10000 [ RunTime:0.057350s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.056698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.056738s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.059225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.055993s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'admin/login/index' , 'admin' , '系统管理' , '用户登录系统成功') [ RunTime:0.059194s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:05+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111716s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.089769s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.063926s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.070179s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.077167s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.066286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.065685s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.065552s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.065194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064515s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064118s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:06+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117762s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.078649s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/main' LIMIT 1 [ RunTime:0.078122s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.076941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.077836s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:10+08:00 ] 127.0.0.1 GET /pay/admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101261s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068565s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/config/index' LIMIT 1 [ RunTime:0.067003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.067964s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.067971s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:38+08:00 ] 127.0.0.1 POST /pay/admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081945s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055316s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/config/index' LIMIT 1 [ RunTime:0.054742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'site_name' LIMIT 1 [ RunTime:0.054155s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='site_name',`value`='河南小饭饭-第四方支付'  WHERE  `name` = 'site_name' [ RunTime:0.058610s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'site_copy' LIMIT 1 [ RunTime:0.054931s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='site_copy',`value`='河南小饭饭信息有限公司 ? 2018'  WHERE  `name` = 'site_copy' [ RunTime:0.056508s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'app_name' LIMIT 1 [ RunTime:0.053366s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='app_name',`value`='第四方支付'  WHERE  `name` = 'app_name' [ RunTime:0.056888s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'app_version' LIMIT 1 [ RunTime:0.054571s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='app_version',`value`='v4.0'  WHERE  `name` = 'app_version' [ RunTime:0.057561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'sms_dayu_keyid' LIMIT 1 [ RunTime:0.053392s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='sms_dayu_keyid',`value`='root'  WHERE  `name` = 'sms_dayu_keyid' [ RunTime:0.058144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'sms_dayu_secret' LIMIT 1 [ RunTime:0.054427s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='sms_dayu_secret',`value`='123456'  WHERE  `name` = 'sms_dayu_secret' [ RunTime:0.056921s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'sms_status' LIMIT 1 [ RunTime:0.053844s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='sms_status',`value`='0'  WHERE  `name` = 'sms_status' [ RunTime:0.056493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'tongji_baidu_key' LIMIT 1 [ RunTime:0.054443s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='tongji_baidu_key',`value`=''  WHERE  `name` = 'tongji_baidu_key' [ RunTime:0.056299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'browser_icon' LIMIT 1 [ RunTime:0.054931s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='browser_icon',`value`=''  WHERE  `name` = 'browser_icon' [ RunTime:0.056909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.054252s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'admin/config/index' , 'admin' , '系统管理' , '系统参数配置成功') [ RunTime:0.056067s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:41+08:00 ] 127.0.0.1 GET /pay/admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112147s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.077627s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/config/index' LIMIT 1 [ RunTime:0.080150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.084261s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074448s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:39:46+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100761s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068390s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.066677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.069861s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.068384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.067895s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.071925s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.068489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.067689s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.067380s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.068216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.068193s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.069002s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:40:15+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110209s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.074156s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.073964s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:40:34+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095949s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064638s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.064065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064594s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064829s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.064517s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11' [ RunTime:0.064143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.064872s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.064391s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('11' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.063691s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:00+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111355s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.073545s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.073917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.074736s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.072995s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,15 [ RunTime:0.074606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074344s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074163s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:03+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100069s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.067381s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.066747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.067646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.066596s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.066572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066358s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065276s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:06+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097256s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065030s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.064339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.065042s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.064496s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.064590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065414s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064391s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:10+08:00 ] 127.0.0.1 GET /pay/admin/channel/edit.html?id=1&spm=m-114-118&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111911s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074826s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/edit' LIMIT 1 [ RunTime:0.074965s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.074778s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.074323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074103s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074324s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:45+08:00 ] 127.0.0.1 POST /pay/admin/channel/edit.html?id=1&spm=m-114-118&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097199s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065045s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/edit' LIMIT 1 [ RunTime:0.064084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.064897s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064374s ]
+[ sql ] [ SQL ] UPDATE `pay_channel`  SET `name`='支付宝',`parentId`=1,`param`='{&quot;partner&quot;: &quot;208862*****17685&quot;,\r\n&quot;method&quot;:&quot;alipay.trade.create&quot;,\r\n\'timestamp\':\'YMDhis\'\r\n&quot;format&quot;:&quot;JSON&quot;,\r\n&quot;charset&quot;:&quot;UTF-8&quot;,\r\n&quot;sign_type&quot;:&quot;RSA-2&quot;,\r\n &quot;show_url&quot;:&quot;www.baidu.com&quot;,\r\n	&quot;seller_id&quot;: &quot;20886*****17685&quot;,\r\n	&quot;key&quot;: &quot;j60fqq5a*********vsi1w4iz9t&quot;,\r\n	&quot;sign_type&quot;: &quot;MD5&quot;,\r\n	&quot;input_charset&quot;: &quot;utf-8&quot;,\r\n	&quot;transport&quot;: &quot;http&quot;,\r\n	&quot;payment_type&quot;: &quot;1&quot;,\r\n	&quot;service&quot;: &quot;alipay.wap.create.direct.pay.by.user&quot;\r\n}',`appId`='111',`key`='1',`url`='https://openapi.alipay.com/gateway.do',`api`='app\\pay\\service\\AliPay',`channelRate`=0.06,`status`=1,`notify_url`='http://sanlicun.cn',`return_url`='http://sanlicun.cn',`descript`='1221',`id`=1,`update_time`=1527212505  WHERE  `id` = 1 [ RunTime:0.064298s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:49+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083626s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056525s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.055150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.056625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.055771s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.055931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056393s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055147s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:50+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099925s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.066662s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066376s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.066193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068559s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.066441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.066105s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11' [ RunTime:0.066093s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:41:57+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=1111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086423s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.057195s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.055784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056429s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056629s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.056180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.058399s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111' [ RunTime:0.056092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.057673s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.056328s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('1111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.056096s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:42:14+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=111221&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115026s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.075822s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.075276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074581s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.073837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074670s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.075052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.075665s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111221' [ RunTime:0.075688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.075572s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.074194s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('111221' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.075665s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:42:59+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=2111221&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084996s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056939s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.056207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055939s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.056226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055851s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.054826s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.056324s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '2111221' [ RunTime:0.055858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.056441s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.057671s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('2111221' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.056197s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:43:24+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=2111111221&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111846s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.074457s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.074786s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074213s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074585s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.074219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.074733s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '2111111221' [ RunTime:0.075149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.074405s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.074871s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('2111111221' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.074520s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:43:52+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=211111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098137s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.066249s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066080s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065510s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.066067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.066426s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '211111122111' [ RunTime:0.066291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.065805s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.065450s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('211111122111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.065300s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:44:19+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11211111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114087s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.066769s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.066479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066225s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.067580s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.065824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.067304s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11211111122111' [ RunTime:0.066050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.065432s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('11211111122111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.066074s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:57:10+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=11211111111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114060s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.067069s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066165s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066750s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.066409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.067467s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11211111111122111' [ RunTime:0.066197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.065989s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.066790s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('11211111111122111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.065735s ]
+---------------------------------------------------------------
+[ 2018-05-25T09:57:42+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=1121111111111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096622s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064743s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.063927s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064642s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063061s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.063298s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.062277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.063810s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1121111111111122111' [ RunTime:0.064126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.064153s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.063998s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('1121111111111122111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.064182s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:02:05+08:00 ] 127.0.0.1 GET /pay/api/5a570d64428ca?OrderID=111121111111111122111&OrderDate=11&OrderMoney=1&Merchant_url=111
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083911s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056821s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.056424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056710s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056657s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.055651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.057002s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111121111111111122111' [ RunTime:0.055904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.059065s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.056654s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `Merchant_url` , `ProductName`) VALUES ('111121111111111122111' , '11' , 1 , 1 , 1 , 0.06 , '111' , '111') [ RunTime:0.055901s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:08:43+08:00 ] 127.0.0.1 GET /pay/port/row/index.html?spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091772s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055197s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/index' LIMIT 1 [ RunTime:0.055412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.055924s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_list` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.055258s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.056408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.055878s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `api_group` [ RunTime:0.054989s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.055683s ]
+[ sql ] [ SQL ] SELECT `id`,`username` FROM `system_user` [ RunTime:0.055572s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054994s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055149s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054133s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055027s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054272s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054731s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054195s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054815s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054179s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055091s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055117s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:08:49+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085486s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056389s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.055654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.056918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.056350s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.056034s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.056155s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055239s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055707s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.058179s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055930s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054807s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:00+08:00 ] 127.0.0.1 GET /pay/port/row/edit_param.html?id=60&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096583s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064429s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/edit_param' LIMIT 1 [ RunTime:0.064025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.064036s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.064733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064346s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064339s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:17+08:00 ] 127.0.0.1 POST /pay/port/row/edit_param.html?id=60&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098329s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066261s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/edit_param' LIMIT 1 [ RunTime:0.066672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.067359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.065211s ]
+[ sql ] [ SQL ] UPDATE `api_fields`  SET `id`=60,`fieldName`='notify_url',`hash`='5a570d64428ca',`dataType`=2,`default`='http://www.baidu.com',`isMust`=1,`range`='',`info`='通知url',`type`=0,`showName`='notify_url',`handler`='10000'  WHERE  `id` = 60 [ RunTime:0.068434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.065902s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/edit_param' , 'admin' , 'API接口管理' , '编辑接口参数成功') [ RunTime:0.067183s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:20+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114408s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076305s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.076130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.075947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.076406s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.076667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.076543s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076013s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076350s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075879s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075971s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076317s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.076538s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:23+08:00 ] 127.0.0.1 GET /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100037s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064204s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.064282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065190s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064496s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:47+08:00 ] 127.0.0.1 POST /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097740s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065128s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.065253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.065583s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `showName` = 'ProductName'  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.064744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.064947s ]
+[ sql ] [ SQL ] INSERT INTO `api_fields` (`fieldName` , `hash` , `dataType` , `default` , `isMust` , `range` , `info` , `type` , `showName` , `handler`) VALUES ('ProductName' , '5a570d64428ca' , 2 , '' , 1 , '' , '商品名称' , 0 , 'ProductName' , '10000') [ RunTime:0.067201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.064525s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/add_param' , 'admin' , 'API接口管理' , '添加接口参数成功') [ RunTime:0.073799s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:50+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112068s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074817s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.074497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.074145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.074479s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.074347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.074455s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.074602s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.073847s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.074676s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.074203s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.075007s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074516s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:09:52+08:00 ] 127.0.0.1 GET /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112387s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074182s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.074284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074431s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.073329s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:14+08:00 ] 127.0.0.1 POST /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102084s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068431s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.068122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.067204s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `showName` = 'return_url'  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.067451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.067439s ]
+[ sql ] [ SQL ] INSERT INTO `api_fields` (`fieldName` , `hash` , `dataType` , `default` , `isMust` , `range` , `info` , `type` , `showName` , `handler`) VALUES ('return_url' , '5a570d64428ca' , 2 , '' , 0 , '' , '返回url' , 0 , 'return_url' , '10000') [ RunTime:0.070152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.068259s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/add_param' , 'admin' , 'API接口管理' , '添加接口参数成功') [ RunTime:0.070945s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:17+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097642s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065802s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.064115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.065121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.064638s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.065827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.064788s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065312s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064676s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.063698s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064552s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065097s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066337s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065507s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:20+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095213s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064569s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.063278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064338s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.064135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.064017s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.065466s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.064083s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.064166s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.064565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.063921s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064013s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:34+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083700s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056319s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.055585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.057422s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.056334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055944s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.055875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.057409s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.056614s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:40+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096749s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064437s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.063744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064396s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065971s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.064034s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.064557s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:49+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081715s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056076s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.054201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.054722s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054243s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.053841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.055428s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.054967s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:10:56+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095809s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064876s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.064127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064113s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064904s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.065467s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.064960s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:11:07+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099612s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.067971s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.067140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.071296s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.067536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068564s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.068021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.067573s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1112' [ RunTime:0.068360s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:11:21+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095601s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064220s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.064462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064834s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064572s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.063842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.065304s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11111112' [ RunTime:0.064791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.065125s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.064999s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:12:11+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097455s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.064584s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.063793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064233s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064700s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.065390s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11111112' [ RunTime:0.064840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.064381s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.064890s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `ProductName`) VALUES ('11111112' , '3333333311' , 0.01 , 0.01 , 0.01 , 0.0006 , '1') [ RunTime:0.065534s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:25:56+08:00 ] 127.0.0.1 GET /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132011s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064811s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.063170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.062733s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.062635s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:21+08:00 ] 127.0.0.1 POST /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099216s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.067312s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.065846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.066390s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `showName` = 'bank'  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065801s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.066361s ]
+[ sql ] [ SQL ] INSERT INTO `api_fields` (`fieldName` , `hash` , `dataType` , `default` , `isMust` , `range` , `info` , `type` , `showName` , `handler`) VALUES ('bank' , '5a570d64428ca' , 2 , '' , 1 , '1' , '银行信息' , 0 , 'bank' , '10000') [ RunTime:0.069546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.066509s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/add_param' , 'admin' , 'API接口管理' , '添加接口参数成功') [ RunTime:0.068578s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:24+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114639s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075641s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.075297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.076029s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.076049s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.076958s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.076091s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075497s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075246s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.074942s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076061s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075652s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076164s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.074815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076123s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.076847s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:27+08:00 ] 127.0.0.1 GET /pay/port/row/edit_param.html?id=63&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110980s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074410s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/edit_param' LIMIT 1 [ RunTime:0.074134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.074416s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.073669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074292s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074009s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:31+08:00 ] 127.0.0.1 POST /pay/port/row/edit_param.html?id=63&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112762s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075105s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/edit_param' LIMIT 1 [ RunTime:0.075670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.077453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.074442s ]
+[ sql ] [ SQL ] UPDATE `api_fields`  SET `id`=63,`fieldName`='bank',`hash`='5a570d64428ca',`dataType`=2,`default`='',`isMust`=1,`range`='',`info`='银行信息',`type`=0,`showName`='bank',`handler`='10000'  WHERE  `id` = 63 [ RunTime:0.077974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.075403s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/edit_param' , 'admin' , 'API接口管理' , '编辑接口参数成功') [ RunTime:0.080329s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:34+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086996s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055961s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.055051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.056424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.055657s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.054995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.055804s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.054412s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055060s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055219s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.058710s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.057558s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.055777s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.058473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056331s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055319s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:26:44+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082178s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056400s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.056001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.057155s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.056599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.056189s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.058875s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.055668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.056986s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.056059s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.056169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056421s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055612s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:27:00+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100553s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.068275s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.067996s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.067102s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065922s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066287s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.066552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.067496s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '11111112' [ RunTime:0.067271s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:27:04+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096889s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065936s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.066290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065281s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066026s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.065336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.066246s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111111121' [ RunTime:0.065736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.066727s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.065695s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `UserID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `RateMoney` , `channelId` , `return_url` , `notify_url` , `cTime` , `ProductName`) VALUES ('111111121' , 10001 , '3333333311' , 0.01 , 0.01 , 0 , 0.0006 , 0.0094 , 1 , '1' , 'http://www.baidu.com' , 1527215224 , '1') [ RunTime:0.065734s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:27:21+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083976s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.057061s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.056253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.057716s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.056211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056581s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.055818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.058418s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '111111121' [ RunTime:0.055673s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:27:24+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079342s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.053729s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.053659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.053549s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.052633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.053820s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.053304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.054440s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.053756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.054427s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LIMIT 1 [ RunTime:0.053940s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `UserID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `RateMoney` , `channelId` , `return_url` , `notify_url` , `cTime` , `ProductName`) VALUES ('1111111211' , 10001 , '3333333311' , 1 , 1 , 0 , 0.06 , 0.94 , 1 , '1' , 'http://www.baidu.com' , 1527215244 , '1') [ RunTime:0.053931s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:21+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095231s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064597s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.064630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.064202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.063424s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.064718s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:24+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096581s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064199s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.064401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.064158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.064638s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.064583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064499s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064304s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:36+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/edit.html?id=6&spm=m-114-117&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097563s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064729s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/edit' LIMIT 1 [ RunTime:0.064334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.064104s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `type` = 2 [ RunTime:0.064094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.064606s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_merchannel` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.064392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064675s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063295s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:46+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/edit.html?id=6&spm=m-114-117&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112426s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075826s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/edit' LIMIT 1 [ RunTime:0.074302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.074887s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `type` = 2 [ RunTime:0.074525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.076020s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.074519s ]
+[ sql ] [ SQL ] UPDATE `pay_merchannel`  SET `name`='测试2',`parentId`=1,`uId`='10001',`url`='111',`rate`=0.01,`status`=1,`descript`='1',`id`=6,`update_time`=1527215325  WHERE  `id` = 6 [ RunTime:0.074398s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:48+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100266s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.068963s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.066195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.067625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.065139s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.065883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066756s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.065654s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:28:50+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/edit.html?id=5&spm=m-114-117&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094565s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064120s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/edit' LIMIT 1 [ RunTime:0.064638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.063804s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `type` = 2 [ RunTime:0.063846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.064731s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_merchannel` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.063971s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.071562s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063302s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:00+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/edit.html?id=5&spm=m-114-117&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095840s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.065122s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/edit' LIMIT 1 [ RunTime:0.064591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.065012s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `type` = 2 [ RunTime:0.064195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.064015s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.064344s ]
+[ sql ] [ SQL ] UPDATE `pay_merchannel`  SET `name`='测试2',`parentId`=0,`uId`='',`url`='1',`rate`=0.01,`status`=1,`descript`='1',`id`=5,`update_time`=1527215340  WHERE  `id` = 5 [ RunTime:0.064445s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:03+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081175s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054187s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.054336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.054589s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.054198s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.054020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055149s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.053424s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:06+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085600s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.058265s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.057814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.058705s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.057314s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.058790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.058220s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.057193s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:12+08:00 ] 127.0.0.1 GET /pay/admin/channel/edit.html?id=1&spm=m-114-118&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112253s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074391s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/edit' LIMIT 1 [ RunTime:0.074454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.074890s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.074676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074202s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074027s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:19+08:00 ] 127.0.0.1 POST /pay/admin/channel/edit.html?id=1&spm=m-114-118&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101198s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.067544s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/edit' LIMIT 1 [ RunTime:0.068246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.067677s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066129s ]
+[ sql ] [ SQL ] UPDATE `pay_channel`  SET `name`='支付宝',`parentId`=1,`param`='{&quot;partner&quot;: &quot;208862*****17685&quot;,\r\n&quot;method&quot;:&quot;alipay.trade.create&quot;,\r\n\'timestamp\':\'YMDhis\'\r\n&quot;format&quot;:&quot;JSON&quot;,\r\n&quot;charset&quot;:&quot;UTF-8&quot;,\r\n&quot;sign_type&quot;:&quot;RSA-2&quot;,\r\n &quot;show_url&quot;:&quot;www.baidu.com&quot;,\r\n	&quot;seller_id&quot;: &quot;20886*****17685&quot;,\r\n	&quot;key&quot;: &quot;j60fqq5a*********vsi1w4iz9t&quot;,\r\n	&quot;sign_type&quot;: &quot;MD5&quot;,\r\n	&quot;input_charset&quot;: &quot;utf-8&quot;,\r\n	&quot;transport&quot;: &quot;http&quot;,\r\n	&quot;payment_type&quot;: &quot;1&quot;,\r\n	&quot;service&quot;: &quot;alipay.wap.create.direct.pay.by.user&quot;\r\n}',`appId`='111',`key`='1',`url`='https://openapi.alipay.com/gateway.do',`api`='app\\pay\\service\\AliPay',`channelRate`=0.006,`status`=1,`notify_url`='http://sanlicun.cn',`return_url`='http://sanlicun.cn',`descript`='1221',`id`=1,`update_time`=1527215359  WHERE  `id` = 1 [ RunTime:0.067411s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:22+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115327s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.078034s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.077130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.082384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.076698s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.076130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076909s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.080937s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:44+08:00 ] 127.0.0.1 GET /pay/admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080081s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.053863s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/config/index' LIMIT 1 [ RunTime:0.053779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.052805s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.052832s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:46+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096828s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066473s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/main' LIMIT 1 [ RunTime:0.063653s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.064634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064532s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063928s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:29:47+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085257s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056177s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.056688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.057206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.055945s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.056056s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:31:48+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113126s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075563s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.075231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.076603s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.076475s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.075493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.075955s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.076500s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.076027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.075519s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.075478s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:31:50+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095192s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064496s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.063492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.064678s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.064784s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.063861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.064311s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.063982s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.065170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064658s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064176s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:31:50+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112373s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075298s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.075785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.076001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.075965s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.076230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076347s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074947s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:37:23+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.157406s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.079149s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.078373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.078470s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.077246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.078157s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.076483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.078291s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.077654s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.078621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.078302s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.077206s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:37:25+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082753s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055339s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.055760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.054904s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.055434s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.054930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055870s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054634s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:37:52+08:00 ] 127.0.0.1 GET /pay/admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098895s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066671s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/config/index' LIMIT 1 [ RunTime:0.065309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.066755s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.066070s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:37:55+08:00 ] 127.0.0.1 GET /pay/admin/auth/index.html?spm=m-2-19
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083832s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056820s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/auth/index' LIMIT 1 [ RunTime:0.056255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.056568s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_auth` LIMIT 1 [ RunTime:0.055505s ]
+[ sql ] [ SQL ] SELECT * FROM `system_auth` ORDER BY `sort` ASC LIMIT 0,20 [ RunTime:0.055496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056404s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055415s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:37:59+08:00 ] 127.0.0.1 GET /pay/admin/user/index.html?spm=m-2-29
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096362s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.063934s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/user/index' LIMIT 1 [ RunTime:0.064067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.064076s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_user` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.063597s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `is_deleted` = 0 LIMIT 0,20 [ RunTime:0.064681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064172s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063302s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:38:03+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082307s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.053962s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.053809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.056474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.054838s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.054993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.054807s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.053498s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:38:17+08:00 ] 127.0.0.1 POST /pay/admin/order/del.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113346s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076595s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/del' LIMIT 1 [ RunTime:0.075480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.077434s ]
+[ sql ] [ SQL ] DELETE FROM `pay_order`    WHERE  `id` IN (103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120) [ RunTime:0.076172s ]
+[ sql ] [ SQL ] DELETE FROM `pay_order`    WHERE  `id` = 103 [ RunTime:0.075429s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:38:20+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082817s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055237s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.053881s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.055201s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.053244s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.054635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055180s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.053953s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:38:34+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082146s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054718s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.054540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056229s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.055135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.055271s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.058587s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.055102s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.053963s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.055309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055894s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054097s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:39:20+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112862s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075518s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.075403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.075721s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.075541s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.075242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076179s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.075506s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:26+08:00 ] 127.0.0.1 GET /pay/port/row/index.html?spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117499s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076451s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/index' LIMIT 1 [ RunTime:0.076543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.076957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_list` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.076544s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.076810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.076540s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `api_group` [ RunTime:0.075679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.076307s ]
+[ sql ] [ SQL ] SELECT `id`,`username` FROM `system_user` [ RunTime:0.076106s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076241s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075920s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076336s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076325s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.077298s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.077404s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.097564s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.079537s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.078587s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.078137s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.077569s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:29+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095992s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.063882s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.064268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.064408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.063187s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.063861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.064661s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.062597s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.062463s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.062927s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.063943s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.062255s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.062303s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.063617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064191s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.062011s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:32+08:00 ] 127.0.0.1 GET /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081488s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054419s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.054154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055193s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054667s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:43+08:00 ] 127.0.0.1 POST /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096361s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064125s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.064410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.064805s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `showName` = 'app_id'  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.063932s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.064259s ]
+[ sql ] [ SQL ] INSERT INTO `api_fields` (`fieldName` , `hash` , `dataType` , `default` , `isMust` , `range` , `info` , `type` , `showName` , `handler`) VALUES ('app_id' , '5a570d64428ca' , 1 , '' , 1 , '' , 'app_id' , 0 , 'app_id' , '10000') [ RunTime:0.069728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.064622s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/add_param' , 'admin' , 'API接口管理' , '添加接口参数成功') [ RunTime:0.070404s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:46+08:00 ] 127.0.0.1 GET /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080710s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054492s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.053109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.054763s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.053498s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:47+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098760s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066223s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.064972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.065764s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065042s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.066092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.065715s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065621s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.063688s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064231s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.063873s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064414s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064092s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.065172s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.064514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065650s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064337s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:42:57+08:00 ] 127.0.0.1 POST /pay/port/row/add_param.html?hash=5a570d64428ca&type=0&spm=m-96-102&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084912s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.057326s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/add_param' LIMIT 1 [ RunTime:0.057169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.057844s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `showName` = 'key'  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.057339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.058245s ]
+[ sql ] [ SQL ] INSERT INTO `api_fields` (`fieldName` , `hash` , `dataType` , `default` , `isMust` , `range` , `info` , `type` , `showName` , `handler`) VALUES ('key' , '5a570d64428ca' , 2 , '' , 1 , '' , 'key' , 0 , 'key' , '10000') [ RunTime:0.064252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.057334s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('127.0.0.1' , 'port/row/add_param' , 'admin' , 'API接口管理' , '添加接口参数成功') [ RunTime:0.061947s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:02+08:00 ] 127.0.0.1 GET /pay/port/row/ask.html?hash=5a570d64428ca&spm=m-96-102
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114673s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076350s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'port/row/ask' LIMIT 1 [ RunTime:0.076296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.076828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.075794s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `type` = 0  AND `hash` = '5a570d64428ca' LIMIT 0,20 [ RunTime:0.076976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.077904s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076131s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075352s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076041s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075174s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075710s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076125s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075450s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075681s ]
+[ sql ] [ SQL ] SELECT `username` FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.075837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.077904s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074781s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:02+08:00 ] 127.0.0.1 GET /pay/wiki/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097033s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066691s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'wiki/index/detail' LIMIT 1 [ RunTime:0.064321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065018s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `is_deleted` = 0  AND `gid` LIKE '%1%' ORDER BY `sort` ASC,`id` DESC [ RunTime:0.064904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_group` [ RunTime:0.064294s ]
+[ sql ] [ SQL ] UPDATE `api_group`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 1 [ RunTime:0.067897s ]
+[ sql ] [ SQL ] SELECT * FROM `api_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_fields` [ RunTime:0.065533s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 0 [ RunTime:0.064682s ]
+[ sql ] [ SQL ] SELECT * FROM `api_fields` WHERE  `hash` = '5a570d64428ca'  AND `type` = 1 [ RunTime:0.065180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064581s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064257s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:15+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114904s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.077044s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.076475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.077202s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.076590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076495s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.076097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.077513s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.077962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.076970s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '1' LIMIT 1 [ RunTime:0.077387s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:32+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096417s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.065048s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.065145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064216s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064370s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.064401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.065913s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.064454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.065850s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '6' LIMIT 1 [ RunTime:0.064928s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:35+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083841s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056890s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.055108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056097s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055851s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.055569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.056151s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.056666s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.055863s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '6' LIMIT 1 [ RunTime:0.055381s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:43:40+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112684s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.075291s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.075182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.075541s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.075244s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.075040s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.075897s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.075862s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.075911s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '6' LIMIT 1 [ RunTime:0.075678s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:44:24+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099616s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.066782s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.068585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.069849s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.066197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066109s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.066367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.066860s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.066026s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.066187s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '6' LIMIT 1 [ RunTime:0.066197s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:44:30+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094857s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.063722s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/main' LIMIT 1 [ RunTime:0.064176s ]
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.063313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064205s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064040s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:44:31+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095087s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064060s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.063642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.064456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.063192s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.063385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064441s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.062829s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:44:33+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096276s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064335s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.063937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.065016s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.064860s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.063781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.064473s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.063639s ]
+---------------------------------------------------------------
+[ 2018-05-25T10:44:45+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082950s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_list` [ RunTime:0.056227s ]
+[ sql ] [ SQL ] SELECT * FROM `api_list` WHERE  `hash` = '5a570d64428ca' LIMIT 1 [ RunTime:0.055511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056400s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056012s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/index/index' LIMIT 1 [ RunTime:0.056167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.056492s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` WHERE  `OrderID` = '1111111211' [ RunTime:0.056085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channellink` [ RunTime:0.056473s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`c`.`channelRate` AS `channelRate`,`c`.`api` AS `api`,`a`.`cId` AS `cId`,`c`.`appId` AS `app_id`,`c`.`url` AS `url`,`c`.`param` AS `param`,`c`.`notify_url` AS `notify_url` FROM `pay_channellink` `a` INNER JOIN `pay_merchannel` `b` ON `a`.`merCId`=`b`.`id` INNER JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` WHERE  `b`.`id` = '6' LIMIT 1 [ RunTime:0.056034s ]
+[ sql ] [ SQL ] INSERT INTO `pay_order` (`OrderID` , `UserID` , `OrderDate` , `trademoney` , `OrderMoney` , `mermoney` , `channelmoney` , `RateMoney` , `channelId` , `return_url` , `notify_url` , `cTime` , `mTime` , `ProductName` , `bank`) VALUES ('1111111211' , 10001 , '3333333311' , 1 , 1 , 0.99 , 0.006 , 0.004 , 1 , '1' , 'http://www.baidu.com' , 1527216285 , 1527216285 , '1' , '11') [ RunTime:0.055755s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:03:21+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101395s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.066411s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.065998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.067269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.066901s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.066096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065790s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.067113s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:03:32+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082159s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.055156s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.055518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.055092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.053640s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.055033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055231s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054841s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:03:35+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096114s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.064990s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.064482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.065225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.064102s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.064118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.065301s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.064036s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:04:54+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082091s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.054665s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.055193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.055195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.054149s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.054318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.055100s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.054220s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:06:53+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115011s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.076937s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.076008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.079166s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.076027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.076922s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (301,302,303,304)  AND `status` = 1 [ RunTime:0.076835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.076593s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.077252s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.076925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.076600s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.076528s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:06:55+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084664s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.056258s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/order/index' LIMIT 1 [ RunTime:0.056223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_order` [ RunTime:0.055938s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_order` LIMIT 1 [ RunTime:0.055653s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_order` LIMIT 0,20 [ RunTime:0.055366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.056019s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.055228s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:09:34+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109804s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.074046s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/merchannel/index' LIMIT 1 [ RunTime:0.074023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_merchannel` [ RunTime:0.075972s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 1 [ RunTime:0.075160s ]
+[ sql ] [ SQL ] SELECT `b`.`id` AS `mId`,`b`.`name` AS `mName`,`b`.`parentId` AS `mParentId`,`b`.`uId` AS `mUId`,`b`.`url` AS `mUrl`,`b`.`descript` AS `mDescript`,`b`.`create_time` AS `mCreateTime`,`b`.`update_time` AS `mUpdateTime`,`b`.`key` AS `mKey`,`b`.`rate` AS `mRate`,`b`.`status` AS `mStatus`,`c`.`name` AS `cName`,`d`.`username` AS `username` FROM `pay_merchannel` `b` LEFT JOIN `pay_channellink` `a` ON `a`.`merCId`=`b`.`id` LEFT JOIN `pay_channel` `c` ON `a`.`cId`=`c`.`id` LEFT JOIN `system_user` `d` ON `b`.`uId`=`d`.`id` LIMIT 0,20 [ RunTime:0.075430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.074856s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.074144s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:09:35+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086530s ] mysql:host=bdm26827513.my3w.com;port=3306;dbname=bdm26827513_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.058695s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/channel/index' LIMIT 1 [ RunTime:0.057197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pay_channel` [ RunTime:0.058147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pay_channel` LIMIT 1 [ RunTime:0.061696s ]
+[ sql ] [ SQL ] SELECT * FROM `pay_channel` LIMIT 0,20 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.057319s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.057565s ]
