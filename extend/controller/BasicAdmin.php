@@ -55,7 +55,7 @@ class BasicAdmin extends Controller
             $vo = ($pkValue !== null) ? array_merge((array)$db->where($pk, $pkValue)->where($where)->find(), $extendData) : $extendData;
             if (false !== $this->_callback('_form_filter', $vo)) {
                 empty($this->title) || $this->assign('title', $this->title);
-				 //var_dump($vo);
+				   //var_dump($vo);
                 return $this->fetch($tplFile, ['vo' => $vo]);
             }
             return $vo;
@@ -116,8 +116,10 @@ class BasicAdmin extends Controller
         }
         if (false !== $this->_callback('_data_filter', $result['list']) && $isDisplay) {
             !empty($this->title) && $this->assign('title', $this->title);
+			//var_dump($result);
             return $this->fetch('', $result);
         }
+		
         return $result;
     }
 

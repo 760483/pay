@@ -1,0 +1,81 @@
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
+ 
+    <div class="layui-form-item">
+        <label class="layui-form-label">名称</label>
+        <div class="layui-input-block">
+		
+            <input type="text" name="goods_name" value='{$vo.goods_name|default=""}' required="required" title="名称" placeholder="名称" class="layui-input">
+        </div>
+    </div>
+
+	    <div class="layui-form-item">
+        <label class="layui-form-label">分类</label>
+        <div class="layui-input-block">
+            <select name='classes_id'  class="input-sm form-control" >
+               
+                {foreach $menus as $key=>$v}
+				
+				<option {if isset($vo.classes_id)&&$v.id==$vo.classes_id }selected{/if} value='{$v.id}'>{$v.spl}{$v.name}</option>
+				 {/foreach}
+               
+            </select>
+        </div>
+    </div>
+	
+	<div class="layui-form-item">
+        <label class="layui-form-label">排序</label>
+        <div class="layui-input-block">
+            <input type="text" name="sort" value='{$vo.sort|default=""}' required="required" title="排序" placeholder="请排序名称" class="layui-input">
+        </div>
+    </div>
+ 
+	
+	
+ 
+   
+	<div class="layui-form-item">
+        <label class="layui-form-label">status</label>
+        <div class="layui-input-block">
+             <select name="status" class="input-sm form-control">
+                <option value="">- 请选择 -</option>
+               
+				 <option   {if isset($vo.status)&&$vo.status==0 }selected{/if} value="0">-  启用 -</option>
+				  <option   {if isset($vo.status)&&$vo.status==1 }selected{/if} value="1">-  禁用 -</option>
+				 
+            </select>
+        </div>
+    </div>
+	
+	
+
+     
+        
+         
+	 <div class="layui-form-item">
+        <label class="layui-form-label">描述</label>
+	
+	  <textarea name="info"> </textarea>
+  
+    </div>
+   
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+    </div>
+   <script>
+   window.form.render();
+    require(['ckeditor'], function () {
+    var editor = window.createEditor('[name="info"]');
+    // 设置内容
+    editor.setData('描述');
+    // 获取内容
+    var content = editor.getData();
+    console.log(content);
+});
+   
+  </script>
+</form>

@@ -8,23 +8,23 @@ namespace app\admin\controller;
 
 use controller\BasicAdmin;
 use service\DataService;
+use think\Db;
 use service\ToolsService;
 use service\NodeService;
-use think\Db;
 
 /**
  * Shop控制器
  * Class Goods
  * @package app\admin\controller
  */
-class Goods extends BasicAdmin
+class Classes extends BasicAdmin
 {
 
     /**
      * 指定当前数据表
      * @var string
      */
-    public $table = 'ShopGoods';
+    public $table = 'ShopClasses';
 
     /**
      *  
@@ -35,32 +35,37 @@ class Goods extends BasicAdmin
      */
     public function index()
     {
-        $this->title = '系统用户管理';
-        $get = $this->request->get();
-        $db = Db::name($this->table) 
-				->alias('a')
-				->join('shop_classes b','b.id= a.classes_id')
-				;
-      
-        return parent::_list($db);
+        $this->title = '分类管理';
+        $db = Db::name($this->table)->order('sort asc,id asc');
+        return parent::_list($db, false);
     }
 
-    /**
-     * 授权管理
-     * @return array|mixed
-     * @throws \think\Exception
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
-     * @throws \think\exception\PDOException
+	
+	
+	
+	 /**
+     * 列表数据处理
+     * @param $data
      */
-    public function auth()
+    protected function _index_data_filter(&$data)
     {
-        return $this->_form($this->table, 'auth');
+        foreach ($data as &$vo) {
+            //($vo['url'] !== '#') && ($vo['url'] = url($vo['url']));
+           // $vo['ids'] = join(',', ToolsService::getArrSubIds($data, $vo['id'],'id','parentId'));
+        }
+        $data = ToolsService::arr2table($data);
     }
+	
+	
+	
+	
+	
+	
+	
+ 
 
     /**
-     * 用户添加
+     * 分类添加
      * @return array|mixed
      * @throws \think\Exception
      * @throws \think\db\exception\DataNotFoundException
@@ -89,6 +94,7 @@ class Goods extends BasicAdmin
 
 	
 	
+	
 	 /**
      * 表单数据前缀方法
      * @param $vo
@@ -100,7 +106,7 @@ class Goods extends BasicAdmin
     {
         if ($this->request->isGet()) {
             // 上级菜单处理
-            $_menus = Db::name('ShopClasses')->where(['status' => '0'])->order('sort asc,id asc')->select();
+            $_menus = Db::name($this->table)->where(['status' => '0'])->order('sort asc,id asc')->select();
 			
             $_menus[] = ['name' => '顶级菜单', 'id' => '0', 'parentId' => '-1'];
 			//$id = 'id', $pid = 'pid', $path = 'path', $ppath = ''
@@ -126,6 +132,10 @@ class Goods extends BasicAdmin
             $this->assign('menus', $menus);
         }
     }
+	
+	
+	
+	
 	
 	
 	
@@ -166,7 +176,7 @@ class Goods extends BasicAdmin
         $this->error('密码修改失败，请稍候再试！');
     }
 
-  
+   
 
     /**
      * 删除用户
@@ -176,12 +186,12 @@ class Goods extends BasicAdmin
     public function del()
     {
         if (in_array('10000', explode(',', $this->request->post('id')))) {
-            $this->error(' 禁止删除！');
+            $this->error('系统超级账号禁止删除！');
         }
         if (DataService::update($this->table)) {
-            $this->success("删除成功！", '');
+            $this->success("用户删除成功！", '');
         }
-        $this->error("删除失败，请稍候再试！");
+        $this->error("用户删除失败，请稍候再试！");
     }
 
     /**

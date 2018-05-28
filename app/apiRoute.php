@@ -72,6 +72,16 @@ return [
             'api/Alipay/notify',
             ['method' => 'get|post', 'after_behavior' => $afterBehavior]
         ],
+        // 获取商品列表 5b0bcbfea5da3
+        '5b0bcbfea5da3' => [
+            'api/Goods/list',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
+        // 规格列表 5b0bcc45e23eb
+        '5b0bcc45e23eb' => [
+            'api/Sku/list',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
 
         // 接口Hash异常跳转
         '__miss__' => ['api/Miss/index'],

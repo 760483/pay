@@ -2,11 +2,11 @@
 
 {block name="button"}
 <div class="nowrap pull-right" style="margin-top:10px">
-    <button data-modal='{:url("$classuri/add")}' data-title="添加商品" class='layui-btn layui-btn-small'>
-        <i class='fa fa-plus'></i> 添加商品
+    <button data-modal='{:url("$classuri/add")}' data-title="添加规格" class='layui-btn layui-btn-small'>
+        <i class='fa fa-plus'></i> 添加规格
     </button>
     <button data-update data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-small layui-btn-danger'>
-        <i class='fa fa-remove'></i> 删除商品
+        <i class='fa fa-remove'></i> 删除规格
     </button>
 </div>
 {/block}
@@ -16,9 +16,9 @@
 <!-- 表单搜索 开始 -->
 <form class="layui-form layui-form-pane form-search" action="__SELF__" onsubmit="return false" method="get">
     <div class="layui-form-item layui-inline">
-        <label class="layui-form-label">商品名</label>
+        <label class="layui-form-label">规格名</label>
         <div class="layui-input-inline">
-            <input name="username" value="{$Think.get.username|default=''}" placeholder="请输入商品名" class="layui-input">
+            <input name="username" value="{$Think.get.username|default=''}" placeholder="请输入规格名" class="layui-input">
         </div>
     </div>
 
@@ -61,7 +61,7 @@
                 <th class='list-table-check-td'>
                     <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
                 </th>
-                <th class='text-left nowrap'>商品名</th>
+                <th class='text-left nowrap'>规格名</th>
                 <th class='text-left nowrap'>手机号</th>
                 <th class='text-left nowrap'>电子邮箱</th>
                 <th class='text-left nowrap'>登录次数</th>
@@ -92,9 +92,9 @@
                     
                 </td>
                 <td class='text-left nowrap'>
-                    {if $vo.status eq 1}
+                    {if $vo.status eq 0}
                     <span>已禁用</span>
-                    {elseif $vo.status eq 0}
+                    {elseif $vo.status eq 1}
                     <span style="color:#090">使用中</span>
                     {/if}
                 </td>

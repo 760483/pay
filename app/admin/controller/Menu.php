@@ -115,6 +115,7 @@ class Menu extends BasicAdmin
                     unset($nodes[$key]);
                 }
             }
+				 
             $this->assign('nodes', array_column($nodes, 'node'));
             $this->assign('menus', $menus);
         }
