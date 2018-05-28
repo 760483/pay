@@ -4,8 +4,7 @@ namespace app\pay\service;
  use app\util\ApiLog;
   class Pay   {
 	 public function pay($args){
-		  $order=db("pay_order");
-		 
+		  $order=db("pay_order"); 
 		
 		 //{"code":1,"data":{"PayID":"2","OrderID":"1526980477","OrderMoney":"10","goods_name":"demo","Merchant_url":"http%3A%2F%2Fwww.baidu.com","Return_url":"http%3A%2F%2Fwww.baidu.com","OrderDate":"20180522171437","sign":"70dbe7e85ffb3791cae800787f9c3a4c"},"msg":""} 
 		 
@@ -51,10 +50,8 @@ namespace app\pay\service;
 		 
 			 
 			 if(md5(urldecode($preArr))!= $sign){
-				 return array("msg"=>'签名不正确');
-				 
-			 }
-			 
+				 return array("msg"=>'签名不正确'); 
+			 } 
 			$data['orderId'] =$args['orderId'];
 			 $data['userId']=$channelRet['mUId'];
 			$data['orderDate'] =$args['orderDate'];
@@ -70,6 +67,13 @@ namespace app\pay\service;
 			$data['mTime'] =time();
 			$data['productName']=$args['productName']; 
 			$data['bank']=$args['bank'];
+			$data['skuId']=isset($args['skuId'])?$args['skuId']:0;
+			if(isset($args['skuId']&&$args['skuId']>0)
+			{
+				$data['type']=sysconf('type');
+			}else{
+				$data['type']=0;
+			}
 			  			
 			$ret=$order->insertGetId($data);  
 			$data['id']=$ret;  

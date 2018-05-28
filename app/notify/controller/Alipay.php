@@ -9,8 +9,9 @@ class Alipay  extends  BasicApi{
 	 
 	 public function notify()
     {
-		PayRetService::success(130);
-		 return 1;
+		 
+		 PayRetService::success(130);
+		 return 'ok';
 	}
 	  //表单提交支付
      

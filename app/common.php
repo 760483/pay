@@ -142,6 +142,33 @@ function sysconf($name, $value = null)
     return isset($config[$name]) ? $config[$name] : '';
 }
 
+
+function limitRate(){
+	$ret=sysconf('limitRate');
+	
+	return json_decode(htmlspecialchars_decode($ret));
+}
+function userRank($rank=0){	
+	$ret=json_decode(htmlspecialchars_decode(sysconf('userRank')));
+	 
+	if($rank<=0){
+		 return 1;
+	}
+	if($rank>=$ret[count($ret)-1]){
+		return count($ret);
+	}
+	 
+	for ($x=0; $x<count($ret); $x++) {
+	 if($rank>=$ret[$x]&&$rank<$ret[$x+1])
+	 {
+		 
+		  return $x+1;
+	 }
+	} 
+	 
+	 
+}
+
 /**
  * RBAC节点权限验证
  * @param string $node

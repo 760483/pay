@@ -45,50 +45,112 @@ class PayRetService
 		Db::name('PayOrder')->where(array('id'=>$id))->update($order);
 		
 		$merchannel=Db::name('PayMerchannel')->where(array('id'=> $order['merChannel']))->find();
-		if($order['type']==0){
+		if($order['type']==0){//通道 用户层级无穷
+ 	
+			PayRetService::channelShare($order['merChannel'],$order['tradeMoney'],$order['channelId']);
+			NotifyService::notify($id);
+		} else{ 
+		//1商品 用户层级无穷
+		//2商品 用户层级有穷
+		//3商品 用户等级级无穷 
 			
-			PayRetService::channelShare($order['merChannel']);
-		}else{
-			
-			PayRetService::userShare($order['orderMoney']*sysconf('adminRate'),$order['userId']);
-		}
- 
-		
-		NotifyService::notify($id);
-		
-		
+			PayRetService::userShare($order['orderMoney']*sysconf('adminRate')-$order['point']/sysconf('pointRate'),$order['userId'],$order['type'],0,$order['orderMoney']*sysconf('adminRate')-$order['point']/sysconf('pointRate'));
+		} 
          
     }
 	
 	/***通道
 	递归分润
 	**/
-	public static function channelShare($id)
+	public static function channelShare($id,$momey,$channelId)
     {
 		$merchannel=Db::name('PayMerchannel')->where(array('id'=> $id))->find();
+		$parentChannel=Db::name('PayMerchannel')->where(array('id'=> $merchannel['parentId']))->find(); 
 		
-		if($merchannel['parentId']==0){
-			
-			 
+		if($merchannel['parentId']==0||$parentChannel==null){
+			$channel=Db::name('PayChannel')->where(array('id'=> $channelId))->find();
+			$moneyRate=$momey*($merchannel['rate']-$channel['channelRate']);
+			 var_dump($channel['channelRate']);
+			 var_dump($merchannel['rate']);
+			 var_dump($momey);
+			 PayRetService::record($merchannel['uId'], $moneyRate);		
 		}else{
-			 
-			PayRetService::channelShare($merchannel['parentId']);
+			$moneyRate=$momey*($merchannel['rate']-$parentChannel['rate']);
+			 PayRetService::record($merchannel['uId'], $moneyRate);		
+			 var_dump($moneyRate);
+			PayRetService::channelShare($merchannel['parentId'],$momey,$channelId);
 		}
 		
 	}
 	/***用户
 	递归分润
+	limitRate
+	
+	//1商品 用户层级无穷
+		//2商品 用户层级有穷
+		//3商品 用户等级级有穷
+	 
 	**/
-	public static function userShare($money,$id,$rate=1)
+	public static function userShare($money,$id,$type=1,$limit=1,$surplus=0)
     {
-		
-		
-		 
+		$limit=$limit+1; 
 		$systemUser=Db::name('SystemUser')->where(array('id'=> $id))->find();
+		 
 		
-		if($systemUser['parentId']==0){
-			var_dump($money);	
-			Db::name('SystemUser')->where(array('id'=> $id))->setInc('amount', $money);
+		if($type==1){
+			
+			if($systemUser['parentId']==0){	
+				var_dump($systemUser['parentId']);			
+				if($money>0)			
+				PayRetService::record($id, $money);				 			
+			}else{ 
+		
+				PayRetService::record($id, $money*(1-$systemUser['rate']));
+				PayRetService::userShare($money*($systemUser['rate']),$systemUser['parentId'],$type,$limit,$surplus);
+			}
+		}
+		
+		else if($type==2){
+			$m=$money*(limitRate()[$limit-1]);
+			if($systemUser['parentId']==0||count(limitRate())==$limit){			 
+				PayRetService::record($id, $m);	
+				 
+				 if($surplus>0){
+					 PayRetService::record(10000, $surplus-$m);	
+				 }
+									
+			}else{ 			
+				PayRetService::record($id, $m);					 
+				PayRetService::userShare($money,$systemUser['parentId'],$type,$limit,$surplus-$m);
+			}
+		}
+		else if($type==3){
+			$userRank=userRank($systemUser['rank']);
+			$m=$money*(limitRate()[$userRank-1]);  
+			
+			if($systemUser['parentId']==0||(count(limitRate())==$limit)){			 
+				PayRetService::record($id, $m);	
+				 if($surplus>$m){
+					 PayRetService::record(10000, $surplus);	
+				 } 			
+			}else{ 			
+				
+				PayRetService::record($id, $m);
+				
+				PayRetService::userShare($money,$systemUser['parentId'],$type,$limit,$surplus-$m);
+			}
+		}  
+				 
+		
+	}
+	
+	
+	
+	static function record($id,$money){
+		
+			Db::name('SystemUser')->where(array('id'=> $id))->setInc( 'amount', $money );
+			Db::name('SystemUser')->where(array('id'=> $id))->setInc(  'point',$money*100  );
+			Db::name('SystemUser')->where(array('id'=> $id))->setInc(  'rank',$money*100);
 				Db::name('SystemRecord')->insert(array(
 			 'userId'=>$id,
 			 'amount'=>$money,
@@ -98,24 +160,6 @@ class PayRetService
 			 
 			 
 			 ));
-			 	 
-		}else{
-			 $pUser=Db::name('SystemUser')->where(array('id'=> $systemUser['parentId']))->find();
-			
-			 Db::name('SystemUser')->where(array('id'=> $id))->setInc('amount', $money*(1-$pUser['rate'])); 
-			Db::name('SystemRecord')->insert(array(
-			 'userId'=>$id,
-			 'amount'=>$money*(1-$pUser['rate']),
-			 'info'=>'分润',
-			 'create_time'=>time(),
-			  'update_time'=>time()
-			 
-			 
-			 ));
-			 
-			PayRetService::userShare($money*($pUser['rate']),$systemUser['parentId']);
-		}
-		
 	}
 	
 	
