@@ -52,12 +52,12 @@
 			{$vo.id}
     
             </td>
-            <td class='text-center'>{$vo.UserID}</td>
-			<td class='text-center'>{$vo.ProductName}</td>
-			<td class='text-center'>{$vo.notify_url}</td>
-			<td class='text-center'>{$vo.return_url}</td>
+            <td class='text-center'>{$vo.userId}</td>
+			<td class='text-center'>{$vo.productName}</td>
+			<td class='text-center'>{$vo.notifyUrl}</td>
+			<td class='text-center'>{$vo.returnUrl}</td>
 			  
-            <td class='text-center'>{$vo.OrderDate|format_datetime}</td>
+            <td class='text-center'>{$vo.orderDate|format_time}</td>
             <td class='text-center'>
                 {if $vo.status eq 0}
                 <span>未支付</span>
@@ -65,11 +65,11 @@
                 <span style="color:#090">使用中</span>
                 {/if}
             </td>
-			 <td class="text-center nowrap">{$vo.mer_channel}</td>
+			 <td class="text-center nowrap">{$vo.merChannel}</td>
 			 <td class="text-center nowrap">{$vo.channelId}</td>
 			  <td class="text-center nowrap">{$vo.bank}</td>
-			   <td class="text-center nowrap">{$vo.RateMoney}</td>
-            <td class="text-center nowrap">{$vo.cTime|format_datetime}</td>
+			   <td class="text-center nowrap">{$vo.rateMoney}</td>
+            <td class="text-center nowrap">{$vo.cTime|format_time}</td>
 			<td class="text-center nowrap">{$vo.extra}</td>
             <td class='text-center nowrap'>  
                 {if auth("$classuri/del")}

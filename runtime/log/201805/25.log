@@ -3103,3 +3103,1463 @@
 ) ]
 [ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.128032s ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:17:06+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.809191s][吞吐率：1.24req/s] [内存消耗：5,429.44kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.260587s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.005377s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:18:09+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.775681s][吞吐率：1.29req/s] [内存消耗：5,432.66kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.252502s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.026423s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:18:40+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.936190s][吞吐率：1.07req/s] [内存消耗：5,434.30kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.240857s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.050700s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:18:48+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.629546s][吞吐率：1.59req/s] [内存消耗：5,742.66kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.278860s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'page',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:20:55+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.254465s][吞吐率：0.80req/s] [内存消耗：6,671.12kb] [文件加载：94]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.277611s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:21:10+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.062160s][吞吐率：0.94req/s] [内存消耗：6,671.12kb] [文件加载：94]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244423s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:21:39+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.365247s][吞吐率：0.73req/s] [内存消耗：9,171.44kb] [文件加载：116]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.278882s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.028064s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:21:40+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.529679s][吞吐率：1.89req/s] [内存消耗：5,742.80kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.241523s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'page',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:22:12+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.135461s][吞吐率：0.88req/s] [内存消耗：9,171.02kb] [文件加载：116]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.201295s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002764s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:22:13+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.772120s][吞吐率：1.30req/s] [内存消耗：5,733.14kb] [文件加载：71]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.280164s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'page',
+  3 => 'list',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.154300s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:22:16+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.605529s][吞吐率：1.65req/s] [内存消耗：5,716.36kb] [文件加载：71]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.201941s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'page',
+  3 => 'list',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.111894s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:23:54+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.925627s][吞吐率：1.08req/s] [内存消耗：5,443.76kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.204993s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.038221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:24:17+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.224837s][吞吐率：0.82req/s] [内存消耗：5,444.25kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.285329s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.048436s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:46:14+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.901977s][吞吐率：1.11req/s] [内存消耗：5,510.75kb] [文件加载：74]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.215703s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.033192s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:47:00+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：4.726775s][吞吐率：0.21req/s] [内存消耗：5,508.66kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.251753s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.063492s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:58:59+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.504508s][吞吐率：0.66req/s] [内存消耗：5,515.59kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.303602s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.063429s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T16:59:37+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.255824s][吞吐率：0.80req/s] [内存消耗：5,515.67kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.236992s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.061205s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:00:24+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.559213s][吞吐率：0.64req/s] [内存消耗：5,521.80kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.274849s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.016682s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:00:47+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.357942s][吞吐率：0.74req/s] [内存消耗：5,522.20kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.233327s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.018476s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:01:10+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.400770s][吞吐率：0.71req/s] [内存消耗：5,522.23kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.254070s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.016118s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:01:37+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.346165s][吞吐率：0.74req/s] [内存消耗：5,473.07kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.278016s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.018517s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:01:54+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.197322s][吞吐率：0.84req/s] [内存消耗：5,473.16kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.256178s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.015688s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:02:23+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.182529s][吞吐率：0.85req/s] [内存消耗：5,472.48kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.245767s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.018590s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:09:34+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.580133s][吞吐率：1.72req/s] [内存消耗：5,258.95kb] [文件加载：69]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.318948s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.019859s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:09:48+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.363074s][吞吐率：0.73req/s] [内存消耗：5,485.91kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.246088s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.041527s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:13:35+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.357919s][吞吐率：0.74req/s] [内存消耗：5,485.91kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.248385s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.042433s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:14:11+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.723111s][吞吐率：0.58req/s] [内存消耗：5,529.52kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.211509s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.048601s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:17:04+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.952248s][吞吐率：0.51req/s] [内存消耗：5,529.61kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.247184s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.046478s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:18:43+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.748910s][吞吐率：0.57req/s] [内存消耗：5,529.48kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.216012s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.045703s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:20:55+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.973185s][吞吐率：0.51req/s] [内存消耗：5,529.48kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.248600s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.036787s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:22:06+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.717628s][吞吐率：0.58req/s] [内存消耗：5,529.48kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.234316s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.030507s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:22:38+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：2.144565s][吞吐率：0.47req/s] [内存消耗：5,529.70kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.276299s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.015449s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:24:20+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.947254s][吞吐率：0.51req/s] [内存消耗：5,530.14kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.247460s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.038790s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:24:56+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.968906s][吞吐率：0.51req/s] [内存消耗：5,530.14kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.250393s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.045012s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:36:22+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.974714s][吞吐率：1.03req/s] [内存消耗：5,475.76kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.215386s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.036425s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:36:37+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.121231s][吞吐率：0.89req/s] [内存消耗：5,473.32kb] [文件加载：71]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.211100s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.046762s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:37:25+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：2.269871s][吞吐率：0.44req/s] [内存消耗：5,554.54kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.257229s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.080384s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:38:23+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.093215s][吞吐率：0.91req/s] [内存消耗：5,492.54kb] [文件加载：73]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.215871s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.054154s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:38:53+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.251801s][吞吐率：0.80req/s] [内存消耗：5,492.54kb] [文件加载：73]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.250896s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.121349s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:39:44+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：1.977315s][吞吐率：0.51req/s] [内存消耗：5,558.38kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.215334s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.092107s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:40:11+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：0.549738s][吞吐率：1.82req/s] [内存消耗：5,259.59kb] [文件加载：69]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.291511s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.073271s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:40:23+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：2.494079s][吞吐率：0.40req/s] [内存消耗：5,564.38kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.243522s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.141656s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T17:40:38+08:00 ] 127.0.0.1 GET /pay/notify/Alipay/notify
+[ info ] 127.0.0.1/pay/notify/Alipay/notify [运行时间：2.426291s][吞吐率：0.41req/s] [内存消耗：5,564.38kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notify',
+    1 => 'Alipay',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=6pttt5u5lqbhidlnpt90sgp0e0; doc=1d1e1f1g1h1i; rows=20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.250217s ]
+[ info ] [ RUN ] app\notify\controller\Alipay->notify[ C:\wamp64\www\pay\app\notify\controller\Alipay.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.135663s ]
+[ info ] [ LOG ] INIT File

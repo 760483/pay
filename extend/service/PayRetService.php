@@ -11,6 +11,7 @@ use Wechat\WechatPay;
 use think\Log;
 use think\Db;
 use service\NotifyService;
+use service\ToolsService;
 
 /**
  * 微信支付数据服务
@@ -44,17 +45,78 @@ class PayRetService
 		Db::name('PayOrder')->where(array('id'=>$id))->update($order);
 		
 		$merchannel=Db::name('PayMerchannel')->where(array('id'=> $order['merChannel']))->find();
-		if($merchannel['parentId']==0){
+		if($order['type']==0){
 			
+			PayRetService::channelShare($order['merChannel']);
+		}else{
 			
+			PayRetService::userShare($order['orderMoney']*sysconf('adminRate'),$order['userId']);
 		}
-		
+ 
 		
 		NotifyService::notify($id);
 		
 		
          
     }
+	
+	/***通道
+	递归分润
+	**/
+	public static function channelShare($id)
+    {
+		$merchannel=Db::name('PayMerchannel')->where(array('id'=> $id))->find();
+		
+		if($merchannel['parentId']==0){
+			
+			 
+		}else{
+			 
+			PayRetService::channelShare($merchannel['parentId']);
+		}
+		
+	}
+	/***用户
+	递归分润
+	**/
+	public static function userShare($money,$id,$rate=1)
+    {
+		
+		
+		 
+		$systemUser=Db::name('SystemUser')->where(array('id'=> $id))->find();
+		
+		if($systemUser['parentId']==0){
+			var_dump($money);	
+			Db::name('SystemUser')->where(array('id'=> $id))->setInc('amount', $money);
+				Db::name('SystemRecord')->insert(array(
+			 'userId'=>$id,
+			 'amount'=>$money,
+			 'info'=>'分润',
+			 'create_time'=>time(),
+			  'update_time'=>time()
+			 
+			 
+			 ));
+			 	 
+		}else{
+			 $pUser=Db::name('SystemUser')->where(array('id'=> $systemUser['parentId']))->find();
+			
+			 Db::name('SystemUser')->where(array('id'=> $id))->setInc('amount', $money*(1-$pUser['rate'])); 
+			Db::name('SystemRecord')->insert(array(
+			 'userId'=>$id,
+			 'amount'=>$money*(1-$pUser['rate']),
+			 'info'=>'分润',
+			 'create_time'=>time(),
+			  'update_time'=>time()
+			 
+			 
+			 ));
+			 
+			PayRetService::userShare($money*($pUser['rate']),$systemUser['parentId']);
+		}
+		
+	}
 	
 	
 
