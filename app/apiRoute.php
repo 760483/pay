@@ -74,13 +74,23 @@ return [
         ],
         // 获取商品列表 5b0bcbfea5da3
         '5b0bcbfea5da3' => [
-            'api/Goods/list',
+            'api/Goods/lists',
             ['method' => 'get|post', 'after_behavior' => $afterBehavior]
         ],
         // 规格列表 5b0bcc45e23eb
         '5b0bcc45e23eb' => [
             'api/Sku/list',
             ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
+        // banner  5b0caf662c3a9
+        '5b0caf662c3a9' => [
+            'api/Goods/banner',
+            ['method' => 'post', 'after_behavior' => $afterBehavior]
+        ],
+        // 商品分类 5b0cf6c3723a2
+        '5b0cf6c3723a2' => [
+            'api/Goods/classlist',
+            ['method' => 'post', 'after_behavior' => $afterBehavior]
         ],
 
         // 接口Hash异常跳转
