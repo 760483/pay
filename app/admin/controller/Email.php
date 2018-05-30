@@ -17,7 +17,7 @@ use think\Db;
  * Class Auth
  * @package app\admin\controller
  */
-class Merchannel extends BasicAdmin
+class Email extends BasicAdmin
 {
 
     /**

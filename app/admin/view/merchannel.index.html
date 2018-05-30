@@ -28,7 +28,7 @@
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">ID</button>
             </th>
             <th class='text-center'>名称</th>
-            <th class='text-center'>上级ID</th>
+            <th class='text-center'>上级用户</th>
             <th class='text-center'>用户</th>
             <th class='text-center'>url</th>
             <th class='text-center'>描述</th>
@@ -57,7 +57,7 @@
             <td class='list-table-sort-td'>
                 {$vo.mName}
             </td>
-            <td class='text-center'>{$vo.mParentId}</td>
+            <td class='text-center'>{$vo.mParentId}:{$vo.parentName}</td>
             <td class='text-center'>{$vo.username }</td>
 			<td class='text-center'>{$vo.mUrl }</td>
 			<td class='text-center'>{$vo.mDescript }</td>        
@@ -66,7 +66,13 @@
 	 
 			<td class="text-center nowrap">{$vo.mKey}</td>
 			<td class="text-center nowrap">{$vo.mRate}</td>
-			<td class="text-center nowrap">{$vo.mStatus}</td>
+			<td class="text-center nowrap"> 
+			  {if $vo.mStatus eq 0}
+                <span>未启用</span>
+                {elseif $vo.mStatus eq 1}
+                <span style="color:#090">启用</span>
+                {/if}
+			</td>
 			<td class="text-center nowrap">{$vo.cName|default="<span style='color:#ccc'>暂无配置</span>"}</td>
             <td class='text-center nowrap'>
 

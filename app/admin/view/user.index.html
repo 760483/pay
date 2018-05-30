@@ -67,6 +67,9 @@
                 <th class='text-left nowrap'>登录次数</th>
                 <th class='text-left nowrap'>最后登录</th>
                 <th class='text-left nowrap'>状态</th>
+				<th class='text-left nowrap'>余额</th>
+				<th class='text-left nowrap'>积分</th>
+				<th class='text-left nowrap'>等级</th>
                 <th class='text-left nowrap'>操作</th>
             </tr>
         </thead>
@@ -97,6 +100,15 @@
                     {elseif $vo.status eq 1}
                     <span style="color:#090">使用中</span>
                     {/if}
+                </td>
+				 <td class='text-left nowrap'>
+                    {$vo.amount}
+                </td>
+				<td class='text-left nowrap'>
+                    {$vo.point}
+                </td>
+				<td class='text-left nowrap'>
+                    {$vo.rank|userRank}
                 </td>
                 <td class='text-left nowrap'>
                     {if auth("$classuri/edit")}

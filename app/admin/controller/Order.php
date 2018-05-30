@@ -35,8 +35,8 @@ class Order extends BasicAdmin
      */
     public function index()
     {
-        $this->title = '系统权限管理';
-        return parent::_list($this->table);
+        $this->title = '订单管理'; 
+        return parent::_list(orderDb() ,true);
     }
 
     

@@ -36,7 +36,8 @@ class Channel extends BasicAdmin
     public function index()
     {
         $this->title = '通道管理';
-        return parent::_list($this->table);
+		
+        return parent::_list(channelDb(),true);
     }
 
     /**

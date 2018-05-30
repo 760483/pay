@@ -27,7 +27,7 @@
             <th class='list-table-sort-td'>
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">id</button>
             </th>
-            <th class='text-center'>用户ID</th>
+            <th class='text-center'>用户</th>
 			<th class='text-center'>产品</th>
 			<th class='text-center'>notify_url</th>
 			<th class='text-center'>return_url</th>
@@ -52,7 +52,7 @@
 			{$vo.id}
     
             </td>
-            <td class='text-center'>{$vo.userId}</td>
+            <td class='text-center'>{$vo.username}</td>
 			<td class='text-center'>{$vo.productName}</td>
 			<td class='text-center'>{$vo.notifyUrl}</td>
 			<td class='text-center'>{$vo.returnUrl}</td>
@@ -62,11 +62,11 @@
                 {if $vo.status eq 0}
                 <span>未支付</span>
                 {elseif $vo.status eq 1}
-                <span style="color:#090">使用中</span>
+                <span style="color:#090">已支付</span>
                 {/if}
             </td>
-			 <td class="text-center nowrap">{$vo.merChannel}</td>
-			 <td class="text-center nowrap">{$vo.channelId}</td>
+			 <td class="text-center nowrap">{$vo.merChannelName}</td>
+			 <td class="text-center nowrap">{$vo.channelName}</td>
 			  <td class="text-center nowrap">{$vo.bank}</td>
 			   <td class="text-center nowrap">{$vo.rateMoney}</td>
             <td class="text-center nowrap">{$vo.cTime|format_time}</td>

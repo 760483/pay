@@ -53,7 +53,7 @@ namespace app\pay\service;
 				 return array("msg"=>'签名不正确'); 
 			 } 
 			$data['orderId'] =$args['orderId'];
-			 $data['userId']=$channelRet['mUId'];
+			 $data['uId']=$channelRet['mUId'];
 			$data['orderDate'] =$args['orderDate'];
 			$data['tradeMoney'] =$args['orderMoney'];
 			$data['orderMoney'] =$args['orderMoney'];

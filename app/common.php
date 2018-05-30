@@ -142,6 +142,27 @@ function sysconf($name, $value = null)
     return isset($config[$name]) ? $config[$name] : '';
 }
 
+function admin(){ 
+	$ret=sysconf('admin'); 
+	return json_decode(htmlspecialchars_decode($ret));
+}
+
+
+function isAdmin($db,$f=''){ 
+	if(empty($f)){
+		$f='a.uId';
+	}
+	 $ret=sysconf('admin'); 
+	$r=json_decode(htmlspecialchars_decode($ret));
+	 
+	 if(in_array('uId',$db->getTableFields())&&(!in_array(session('user')['id'],$r))){
+		 return array($f=>session('user')['id']);
+	 }else{
+		 return array();
+	 } 
+	  
+	 
+}
 
 function limitRate(){
 	$ret=sysconf('limitRate');
@@ -310,37 +331,155 @@ function a2s($data){
          * @param $data  array
          * return mixed
          */
-         function postRequest($url,$data){
-            $postStr = '';
-            foreach($data as $k => $v){
-                $postStr .= $k."=".$v."&";
-            }
-            $postStr=substr($postStr,0,-1);
-            return postUrl($url,$postStr);
-        }
-        /**
-         * post提交
-         * @param $url
-         * @param $data Str
-         * return mixed
-         */
-         function postUrl($url,$data){
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_HEADER, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-            curl_setopt($ch, CURLOPT_URL,$url);
-            //为了支持cookie
-            curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 60);
-            //返回结果
-            //拒绝验证ca证书
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            $result = curl_exec($ch);
-            curl_close ($ch);
-			 ApiLog::setUserInfo($result);
-            return $result;
-        }
+ function postRequest($url,$data){
+	$postStr = '';
+	foreach($data as $k => $v){
+		$postStr .= $k."=".$v."&";
+	}
+	$postStr=substr($postStr,0,-1);
+	return postUrl($url,$postStr);
+}
+/**
+ * post提交
+ * @param $url
+ * @param $data Str
+ * return mixed
+ */
+ function postUrl($url,$data){
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+	curl_setopt($ch, CURLOPT_URL,$url);
+	//为了支持cookie
+	curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+	//返回结果
+	//拒绝验证ca证书
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	$result = curl_exec($ch);
+	curl_close ($ch);
+	 ApiLog::setUserInfo($result);
+	return $result;
+}
+		
+/**
+	order
+*/	
+function orderDb(){
+	$db = Db::name('PayOrder')
+		->alias('a')
+		->join('pay_merchannel b','a.merChannel = b.id','left')
+		->join('pay_channel c','a.channelId = c.id','left')
+		->join('system_user d','a.uId = d.id','left') 
+		->where(isAdmin(Db::name('PayOrder' )))
+		 ->field([ 
+		 'a.orderId',
+		 'a.id',
+		 'a.uId'=>'uId',
+		 'a.orderDate',
+		 'a.tradeMoney',
+		 'a.merMoney',
+		 'a.orderMoney',
+		 'a.tradeMoney',
+		 'a.productName',
+		 'a.notifyUrl',
+		 'a.returnUrl',
+		 'a.cTime',
+		 'a.mTime',
+		 'a.status',
+		 'a.rateMoney',
+		 'a.bank',
+		 'a.extra',
+		 'b.name'=>'merChannelName',
+		 'c.name'=>'channelName', 
+		 'd.username'=>'username'
+		]); 
+	
+	return $db;
+	
+}
+
+/**
+	商户
+*/	
+function merchannelDb(){
+	  $db = Db::name('PayMerchannel')
+				->alias('b')
+				->join('pay_channellink a','a.merCId = b.id','left')
+				->join('pay_channel c','a.cId = c.id','left')
+				->join('system_user d','b.uId = d.id','left')
+				->join('pay_merchannel e','b.parentId=e.id','left')
+				->where(isAdmin(Db::name('PayMerchannel','b.uId')))
+				->field(['b.id'=>'mId',
+						'b.name'=>'mName',
+						'b.parentId'=>'mParentId',
+						'b.uId'=>'uId',
+						'b.url'=>'mUrl',
+						'b.descript'=>'mDescript',
+						'b.create_time'=>'mCreateTime',
+						'b.update_time'=>'mUpdateTime',
+						'b.key'=>'mKey',
+						'b.rate'=>'mRate',
+						'b.status'=>'mStatus',
+						'c.name'=>'cName',
+						'd.username'=>'username',
+						'e.name'=>'parentName'
+						
+				]);
+				
+				 
+	return $db;
+}
+function channelDb(){
+	  $db = Db::name('PayChannel')
+				->alias('a')
+				->join('pay_channel b','a.parentId = b.id','left') 
+				->join('system_user d','a.uId = d.id','left')
+			 ->where(isAdmin(Db::name('PayChannel' )))
+				->field([ 
+				'a.id',
+				'a.uId'=>'uId',
+				'a.name',
+				'a.parentId',
+				'a.param',
+				'a.key',
+				'a.url',
+				'a.descript',
+				'a.create_time',
+				'a.update_time',
+				'a.api',
+				'a.channelRate',
+				'a.status',
+				'a.appId',
+				'a.return_url',
+				'a.notify_url', 				
+				'b.name'=>'parentName',
+				'd.username'=>'createName'
+						
+				]) ;
+	return $db;
+}
+
+
+
+function send_email($to, $subject, $content)
+{
+    vendor('swiftmailer.swift_required');
+
+    $transport = Swift_SmtpTransport::newInstance(C('SWIFT_HOST'), 25)
+                    ->setUsername(C('SWIFT_USERNAME'))
+                    ->setPassword(C('SWIFT_PASSWORD'));
+
+    $mailer  = Swift_Mailer::newInstance($transport);
+    $message = Swift_Message::newInstance()
+                    ->setSubject($subject)
+                    ->setFrom(array(C('SWIFT_USERNAME') => 'safari_shi'))
+                    ->setTo($to)
+                    ->setBody($content, 'text/html', 'utf-8');
+
+    return $mailer->send($message);
+}
 
 

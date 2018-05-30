@@ -28,7 +28,7 @@
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">ID</button>
             </th>
             <th class='text-center'>名称</th>
-            <th class='text-center'>上级ID</th>
+            <th class='text-center'>上级</th>
             <th class='text-center'>用户ID</th>
             <th class='text-center'>url</th>
             <th class='text-center'>描述</th>
@@ -58,8 +58,8 @@
             <td class='list-table-sort-td'>
                 {$vo.name}
             </td>
-            <td class='text-center'>{$vo.parentId}</td>
-            <td class='text-center'>{$vo.createId }</td>
+            <td class='text-center'>{$vo.parentId}:{$vo.parentName}</td>
+            <td class='text-center'>{$vo.createName }</td>
 			<td class='text-center'>{$vo.url }</td>
 			<td class='text-center'>{$vo.descript }</td>        
             <td class="text-center nowrap">{$vo.create_time|format_time}</td>

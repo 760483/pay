@@ -89,6 +89,9 @@ class BasicAdmin extends Controller
     protected function _list($dbQuery = null, $isPage = true, $isDisplay = true, $total = false, $result = [])
     {
         $db = is_null($dbQuery) ? Db::name($this->table) : (is_string($dbQuery) ? Db::name($dbQuery) : $dbQuery);
+		 
+		 
+		 
         // 列表排序默认处理
         if ($this->request->isPost() && $this->request->post('action') === 'resort') {
             $data = $this->request->post();
@@ -108,15 +111,16 @@ class BasicAdmin extends Controller
         if ($isPage) {
             $rows = intval($this->request->get('rows', cookie('rows')));
             cookie('rows', $rows >= 10 ? $rows : 20);
-            $page = $db->paginate($rows, $total, ['query' => $this->request->get('', '', 'urlencode')]);
+            $page = $db   ->paginate($rows, $total, ['query' => $this->request->get('', '', 'urlencode')]);
+			 
             list($pattern, $replacement) = [['|href="(.*?)"|', '|pagination|'], ['data-open="$1"', 'pagination pull-right']];
-            list($result['list'], $result['page']) = [$page->all(), preg_replace($pattern, $replacement, $page->render())];
+            list($result['list'], $result['page']) = [$page ->all(), preg_replace($pattern, $replacement, $page->render())];
         } else {
-            $result['list'] = $db->select();
+            $result['list'] = $db ->select();
         }
         if (false !== $this->_callback('_data_filter', $result['list']) && $isDisplay) {
             !empty($this->title) && $this->assign('title', $this->title);
-			//var_dump($result);
+			// var_dump($result);
             return $this->fetch('', $result);
         }
 		
