@@ -468,14 +468,14 @@ function send_email($to, $subject, $content)
 {
     vendor('swiftmailer.swift_required');
 
-    $transport = Swift_SmtpTransport::newInstance(C('SWIFT_HOST'), 25)
-                    ->setUsername(C('SWIFT_USERNAME'))
-                    ->setPassword(C('SWIFT_PASSWORD'));
+    $transport = Swift_SmtpTransport::newInstance(config('SWIFT_HOST'), 25)
+                    ->setUsername(config('SWIFT_USERNAME'))
+                    ->setPassword(config('SWIFT_PASSWORD'));
 
     $mailer  = Swift_Mailer::newInstance($transport);
     $message = Swift_Message::newInstance()
                     ->setSubject($subject)
-                    ->setFrom(array(C('SWIFT_USERNAME') => 'safari_shi'))
+                    ->setFrom(array(config('SWIFT_USERNAME') => 'safari_shi'))
                     ->setTo($to)
                     ->setBody($content, 'text/html', 'utf-8');
 

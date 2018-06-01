@@ -213,5 +213,9 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+	
+	'SWIFT_HOST'=>'smtp.sina.com',
+	'SWIFT_USERNAME'=>'ruoshuisixue@sina.com',
+	'SWIFT_PASSWORD'=>'76543210qq',
 	 
 ];

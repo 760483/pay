@@ -92,6 +92,11 @@ return [
             'api/Goods/classlist',
             ['method' => 'post', 'after_behavior' => $afterBehavior]
         ],
+        // 手机号码归属地查询 5b0f8fda9e202
+        '5b0f8fda9e202' => [
+            'api/index/phone',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
 
         // 接口Hash异常跳转
         '__miss__' => ['api/Miss/index'],

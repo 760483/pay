@@ -35,4 +35,12 @@ class Index extends BasicApi
 		return $this->buildSuccess(1);
 		
 	}
+	
+	
+	 public function phone()
+    {  
+		 
+		 return $this->buildSuccess(db("phone")->where(array('PhoneNo'=>substr(input('phoneNo'),0,7)))->find());
+		
+	}
 }
