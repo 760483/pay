@@ -117,7 +117,7 @@ function format_datetime($date, $format = 'Y年m月d日 H:i:s')
 {
     return empty($date) ? '' : date($format, strtotime($date));
 }
-function format_time($date, $format = 'Y年m月d日 H:i:s')
+function format_time($date, $format = 'm月d日 H:i:s')
 {
     return empty($date) ? '' : date($format, $date);
 }
@@ -379,7 +379,7 @@ function orderDb(){
 		 'a.id',
 		 'a.uId'=>'uId',
 		 'a.orderDate',
-		 'a.tradeMoney',
+		 'a.channelMoney',
 		 'a.merMoney',
 		 'a.orderMoney',
 		 'a.tradeMoney',
@@ -481,5 +481,71 @@ function send_email($to, $subject, $content)
 
     return $mailer->send($message);
 }
+
+//删除表
+function delTable($tableName){
+	
+	$d="DROP TABLE IF EXISTS `".$tableName."`";
+	return  Db::execute($d);
+}
+
+//创建表
+function createTable($tableName,$data,$type,$key,$comment){ 
+	$s='CREATE TABLE `'.$tableName.'`( ';
+	for($i=0;$i<sizeof($data);$i++){
+		$s.="`".$data[$i]."`".' '.$type[$i].' '.$key[$i].' COMMENT '."'".$comment[$i]."'".',';		
+	}
+	
+	$s=rtrim($s,',');
+	$s=$s.')';
+	delTable($delTable);
+	return Db::execute($s); 
+	
+}
+
+ 
+function updateTable($tableName,$data,$type,$key,$comment){ 
+
+$c =Db::query("select COLUMN_NAME from information_schema.COLUMNS where  table_name='".$tableName."'   and table_schema='".config('database')['database']."'");
+	$db = array_reduce($c, function ($db, $value) {
+    return array_merge($db, array_values($value));
+}, array());
+	
+	 
+
+	$s='ALTER TABLE `'.$tableName.'` ';
+	
+	for($i=0;$i<sizeof($data);$i++){
+		if(in_array($data[$i] ,$db)){ 
+			$s.="modify   `".$data[$i]."`".' '.$type[$i].' '.' COMMENT '."'".$comment[$i]."'".',';	 
+		}else{
+			$s.="ADD COLUMN `".$data[$i]."`".' '.$type[$i].' '.' COMMENT '."'".$comment[$i]."'".','; 
+		} 
+	} 
+	for($i=0;$i<sizeof($db);$i++){
+		if(!in_array($db[$i] ,$data)){
+			$s.="DROP COLUMN `".$data[$i]."`".',';	 
+		}
+		
+	} 
+	
+	$s=rtrim($s,',');
+	
+	
+	return  Db::execute($s); 
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

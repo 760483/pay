@@ -53,22 +53,29 @@
         </div>
     </div>
 	<div class="layui-form-item">
-        <label class="layui-form-label">status</label>
+        <label class="layui-form-label">状态</label>
         <div class="layui-input-block">
-            <input type="text" name="status" value='{$vo.status|default=""}' required="required" title="status" placeholder="status" class="layui-input">
+		 <select name="status" class="input-sm form-control">
+                <option value="">- 请选择 -</option>
+                <option  {if(isset($vo.status)&&$vo.status==1)}selected{/if} value="1">- 启用 -</option>
+			    <option  {if(isset($vo.status)&&$vo.status==0)}selected{/if} value="0">- 禁用 -</option>
+				 
+            </select>
+             
         </div>
     </div>
 	
 	
 	<div class="layui-form-item">
         <label class="layui-form-label">通知</label>
-        <div class="layui-input-block">
+        <div class="layui-input-block"> 
+		
             <input type="text" name="notify_url" value='{$vo.notify_url|default=""}' required="required" title="notify_url" placeholder="notify_url" class="layui-input">
         </div>
     </div>
 	
 		<div class="layui-form-item">
-        <label class="layui-form-label">显示</label>
+        <label class="layui-form-label">显示地址</label>
         <div class="layui-input-block">
             <input type="text" name="return_url" value='{$vo.return_url|default=""}' required="required" title="return_url" placeholder="return_url" class="layui-input">
         </div>
@@ -87,5 +94,5 @@
         <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
         <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
     </div>
-
+ <script>window.form.render();</script>
 </form>

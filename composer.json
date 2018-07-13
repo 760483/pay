@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        
         "qiniu/php-sdk": "^7.0",
         "zoujingli/wechat-php-sdk": "dev-master",
         "zoujingli/ip2region": "^1.0",
@@ -37,12 +37,17 @@
         "topthink/think-image": "^1.0",
         "topthink/think-testing": "1.0.*",
         "monolog/monolog": "^1.23",
-        "phpoffice/phpspreadsheet": "^1.2"
+        "phpoffice/phpspreadsheet": "^1.2",
+        "jpush/jpush": "^3.5"
+ 
     },
     "extra": {
         "think-path": "thinkphp"
     },
     "config": {
         "preferred-install": "dist"
+    }
+	 "autoload": {
+        "files": ["baidu/Channel.class.php"]
     }
 }

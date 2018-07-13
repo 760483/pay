@@ -144,9 +144,9 @@ class Channel extends BasicAdmin
     public function forbid()
     {
         if (DataService::update($this->table)) {
-            $this->success("权限禁用成功！", '');
+            $this->success("禁用成功！", '');
         }
-        $this->error("权限禁用失败，请稍候再试！");
+        $this->error("禁用失败，请稍候再试！");
     }
 
     /**

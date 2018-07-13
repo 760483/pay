@@ -30,7 +30,8 @@
             <th class='text-center'>用户</th>
 			<th class='text-center'>产品</th>
 			<th class='text-center'>notify_url</th>
-			<th class='text-center'>return_url</th>
+			<th class='text-center'>订单金额</th>
+		 <th class='text-center'>通道金额</th>
             <th class='text-center'>日期</th>
             <th class='text-center'>状态</th>
 			<th class='text-center'>商户channel</th>
@@ -55,7 +56,8 @@
             <td class='text-center'>{$vo.username}</td>
 			<td class='text-center'>{$vo.productName}</td>
 			<td class='text-center'>{$vo.notifyUrl}</td>
-			<td class='text-center'>{$vo.returnUrl}</td>
+			 <td class='text-center'>{$vo.tradeMoney}</td>
+			  <td class='text-center'>{$vo.channelMoney}</td>
 			  
             <td class='text-center'>{$vo.orderDate|format_time}</td>
             <td class='text-center'>

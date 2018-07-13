@@ -97,6 +97,26 @@ return [
             'api/index/phone',
             ['method' => 'get|post', 'after_behavior' => $afterBehavior]
         ],
+        // 测试 5b16442439b09
+        '5b16442439b09' => [
+            'api/index/resetphone',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
+        // order 5b29d566d2414
+        '5b29d566d2414' => [
+            'api/index/order',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
+        // device 5b4441682af1a
+        '5b4441682af1a' => [
+            'api/Index/device',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
+        // del_device 5b4441a279629
+        '5b4441a279629' => [
+            'api/index/del_device',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
 
         // 接口Hash异常跳转
         '__miss__' => ['api/Miss/index'],

@@ -51,7 +51,7 @@ class Merchannel extends BasicAdmin
      */
     public function config()
     {
-		$channel=Db::name('PayChannel')->select();
+		 $channel=Db::name('PayChannel')->select();
          return $this->_form('PayChannellink', 'config','merCId',array('merCId'=>input('id')),array('channel'=>$channel,'merCId'=>input('id')));
     }
 
@@ -101,18 +101,7 @@ class Merchannel extends BasicAdmin
         $this->error("权限禁用失败，请稍候再试！");
     }
 
-    /**
-     * 权限恢复
-     * @throws \think\Exception
-     * @throws \think\exception\PDOException
-     */
-    public function resume()
-    {
-        if (DataService::update($this->table)) {
-            $this->success("权限启用成功！", '');
-        }
-        $this->error("权限启用失败，请稍候再试！");
-    }
+ 
 
     /**
      * 权限删除

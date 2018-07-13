@@ -12,7 +12,7 @@ class Alipay  extends  BasicApi{
 		PayRetService::success(1);
 		 
 	}
-	  //表单提交支付
+
      
  
     

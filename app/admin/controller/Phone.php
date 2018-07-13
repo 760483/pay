@@ -35,6 +35,22 @@ class Phone extends BasicAdmin
     {
         $this->title = '手机管理';
        $db = Db::name($this->table) ;
+	   
+	  $db= db("phone") 
+			->alias('p')
+			 ->join('area a','p.AreaCode = a.TelAreaCode','left')
+			->where(array('a.depth'=>'2'))
+			->field([
+				'p.CardP'=>'CardP',
+				'a.City'=>'PCity' ,
+				'a.ParentNamePath'=>'Province' ,
+				'p.id'=>'id',
+				'p.PhoneNo'=>'PhoneNo',
+				'p.ZipCode'=>'ZipCode',
+				'p.AreaCode'=>'AreaCode'
+			]);
+	   
+	   
 	    $get = $this->request->get();
 		 
 	   if (isset($get['PhoneNo']) && $get['PhoneNo'] !== '') {

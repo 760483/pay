@@ -52,9 +52,12 @@ class HttpService
      */
     static public function post($url, $data = [], $second = 30, $header = [])
     {
+
         $curl = curl_init();
         self::applyData($data);
         self::applyHttp($curl, $url);
+
+
         curl_setopt($curl, CURLOPT_TIMEOUT, $second);
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_HEADER, false);
@@ -62,9 +65,11 @@ class HttpService
         curl_setopt($curl, CURLOPT_POST, true);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
         if (!empty($header)) {
+
             curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
         }
         list($content, $status) = [curl_exec($curl), curl_getinfo($curl), curl_close($curl)];
+
         return (intval($status["http_code"]) === 200) ? $content : false;
     }
 
@@ -109,6 +114,27 @@ class HttpService
             }
         }
         $isBuild && $data = http_build_query($data);
+    }
+
+
+
+
+  static  function send_post($url,$param){
+        $postdata = http_build_query($param);
+      //  var_dump($postdata);
+        $options = array(
+            'http' => array(
+                'method' => 'POST',
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n" .
+                    "version:v4.0\r\n",
+                'content' => $postdata,
+                'timeout' => 15 * 60 // 超时时间（单位:s）
+            )
+        );
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        return $result;
+
     }
 
 }

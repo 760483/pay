@@ -39,7 +39,7 @@ class Goods extends BasicAdmin
         $get = $this->request->get();
         $db = Db::name($this->table) 
 				->alias('a')
-				->join('shop_classes b','b.id= a.classes_id')
+				->join('shop_classes b','b.id= a.classId','left')
 				;
       
         return parent::_list($db);
