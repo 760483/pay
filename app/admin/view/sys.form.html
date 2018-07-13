@@ -1,0 +1,75 @@
+<form class="layui-form layui-box"    style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
+
+
+ <table class="layui-table" lay-skin="line" lay-size="sm">
+        <thead>
+            <tr>
+             
+              
+                <th class='text-left nowrap'>名称</th>
+				 
+                <th class='text-left nowrap'>类型</th> 
+				  
+				 <th class='text-left nowrap'>约束</th>
+				 	 <th class='text-left nowrap'>注释</th>
+                <th class='text-left nowrap'>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach $list as $key=>$vo}
+            <tr>
+                
+                <td class='text-left nowrap'>
+				  <input     name='data[]'  value='{$vo.COLUMN_NAME|default=""}'
+                   required="required" title="名称" placeholder="名称" class="layui-input  ">
+                    
+                </td>
+              
+            
+             
+                <td class='text-left nowrap'>
+                     <input     name='type[]'  value='{$vo.COLUMN_TYPE|default=""}'
+                   required="required" title="类型" placeholder="类型" class="layui-input  ">
+                </td> 
+				  
+				  
+				 <td class='text-left nowrap'>
+                      <select     name='key[]'  value='{$vo.COLUMN_KEY|default=""}'
+                   required="required" title="主键" placeholder="主键" class="layui-input  ">
+				    <option value=" NOT NULL ">非空</option>
+					<option value=" ">可空</option>
+				   <option value=" primary key ">主键</option>
+				   </select>
+                </td> 
+				  <td class='text-left nowrap'>
+                      <input     name='comment[]'  value='{$vo.COLUMN_COMMENT|default=""}'
+                    title="注释" placeholder="注释" class="layui-input  ">
+                </td> 
+                <td class='text-left nowrap'>
+                   
+                    {if auth("$classuri/del")}
+                    <span class="text-explode">|</span>
+                    <a data-update="{$vo.COLUMN_NAME}" data-field='delete' data-action='{:url("$classuri/del")}'
+                       href="javascript:void(0)">删除</a>
+                    {/if}
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table> 
+   
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+    </div>
+    <script>window.form.render();</script>
+	 <script>
+	 
+	 function gotolink(){
+	 }
+	 </script>
+</form>

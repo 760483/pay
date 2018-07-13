@@ -11,6 +11,7 @@ use service\DataService;
 use service\NodeService;
 use service\ToolsService;
 use think\Db;
+use think\Request;
 
 /**
  * MerChannel控制器
@@ -35,9 +36,9 @@ class Merchannel extends BasicAdmin
      */
     public function index()
     {
-        $this->title = '商户channel管理';  
-	 
-	  return parent::_list(merchannelDb() , true);  
+        $this->title = '商户channel管理';
+
+        return parent::_list(merchannelDb(), true);
     }
 
     /**
@@ -51,11 +52,45 @@ class Merchannel extends BasicAdmin
      */
     public function config()
     {
-		 $channel=Db::name('PayChannel')->select();
-         return $this->_form('PayChannellink', 'config','merCId',array('merCId'=>input('id')),array('channel'=>$channel,'merCId'=>input('id')));
+        if (Request::instance()->isGet()) {
+            $channel = Db::name('PayChannel')->select();
+            return $this->_form('PayChannellink', 'config', 'merCId', array('merCId' => input('id')), array('channel' => $channel, 'merCId' => input('id')));
+
+        } else {
+            //   cId info id merCId
+            if (Request::instance()->has('id', 'post')) {
+
+                $id = input('id');
+
+                $link = db('pay_channellink')->where(array('id' => $id))->find();
+
+                $link['cId'] = input('cId');
+                $link['info'] = input('info');
+                $link['update_time'] = time();
+                $link['merCId']=input('merCId');
+                db('pay_channellink')->where(array('id'=>$link['id']))->update($link);
+
+                $this->success('更新成功','');
+
+            } else {
+                $link['cId'] = input('cId');
+                $link['info'] = input('info');
+                $link['update_time'] = time();
+                $link['create_time'] = time();
+                $link['merCId']=input('merCId');
+
+                db('pay_channellink')->insert($link);
+
+                $this->success('添加成功','');
+
+            }
+
+
+        }
+
     }
 
-     
+
     /**
      * 商户通道添加
      * @return array|mixed
@@ -67,10 +102,10 @@ class Merchannel extends BasicAdmin
      */
     public function add()
     {
-		
-		$user=Db::name("SystemUser")->where(array('type'=>2))->select();
-		
-        return $this->_form($this->table, 'form','','',array('key'=>randCode(32),'user'=>$user));
+
+        $user = Db::name("SystemUser")->where(array('type' => 2))->select();
+
+        return $this->_form($this->table, 'form', '', '', array('key' => randCode(32), 'user' => $user));
     }
 
     /**
@@ -83,9 +118,9 @@ class Merchannel extends BasicAdmin
      * @throws \think\exception\PDOException
      */
     public function edit()
-    { 
-		$user=Db::name("SystemUser")->where(array('type'=>2))->select();
-        return $this->_form($this->table, 'form','','',array('user'=>$user));
+    {
+        $user = Db::name("SystemUser")->where(array('type' => 2))->select();
+        return $this->_form($this->table, 'form', '', '', array('user' => $user));
     }
 
     /**
@@ -101,7 +136,6 @@ class Merchannel extends BasicAdmin
         $this->error("权限禁用失败，请稍候再试！");
     }
 
- 
 
     /**
      * 权限删除

@@ -1,0 +1,52 @@
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户ID</label>
+        <div class="layui-input-block">
+             
+            <input  name="userID" value='{$vo.userID|default=""}'
+                   required="required" title="用户ID" placeholder="用户ID" class="layui-input">
+             
+           
+        </div>
+    </div>
+
+    
+
+  
+
+     
+	  <div class="layui-form-item">
+        <label class="layui-form-label">标题</label>
+        <div class="layui-input-block">
+            <input name="title"  
+                   value='{$vo.title|default=""}' title="标题" placeholder="标题" class="layui-input">
+        </div>
+    </div>
+
+	 <div class="layui-form-item">
+        <label class="layui-form-label">内容</label>
+        <div class="layui-input-block">
+            <input name="content"  
+                   value='{$vo.content|default=""}' title="内容" placeholder="内容" class="layui-input">
+        </div>
+    </div>
+
+	 <div class="layui-form-item">
+        <label class="layui-form-label">收件人</label>
+        <div class="layui-input-block">
+            <input name="toUser"  
+                   value='{$vo.toUser|default=""}' title="收件人" placeholder="收件人" class="layui-input">
+        </div>
+    </div>
+
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+    </div>
+    <script>window.form.render();</script>
+</form>

@@ -1,0 +1,54 @@
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">手机账号</label>
+        <div class="layui-input-block">
+            {if $vo and isset($vo.PhoneNo)}
+            <input readonly="readonly" disabled="disabled" name="PhoneNo" value='{$vo.PhoneNo|default=""}'
+                   required="required" title="请输入手机名称" placeholder="请输入手机名称" class="layui-input">
+            {else}
+            <input name="PhoneNo" value='{$vo.PhoneNo|default=""}' required="required"   pattern="^1[3-9][0-9]{5}$"
+                   title="请输入手机前7位" placeholder="请输入手机前7位" class="layui-input">
+            {/if}
+        </div>
+    </div>
+
+    
+
+  
+
+     
+	  <div class="layui-form-item">
+        <label class="layui-form-label">运营商</label>
+        <div class="layui-input-block">
+            <input name="CardP"  
+                   value='{$vo.CardP|default=""}' title="请输入运营商" placeholder="请输入运营商" class="layui-input">
+        </div>
+    </div>
+
+	 <div class="layui-form-item">
+        <label class="layui-form-label">区号</label>
+        <div class="layui-input-block">
+            <input name="AreaCode"  
+                   value='{$vo.AreaCode|default=""}' title="请输入区号" placeholder="请输入区号" class="layui-input">
+        </div>
+    </div>
+
+	 <div class="layui-form-item">
+        <label class="layui-form-label">邮编</label>
+        <div class="layui-input-block">
+            <input name="ZipCode"  
+                   value='{$vo.ZipCode|default=""}' title="请输入邮编" placeholder="请输入邮编" class="layui-input">
+        </div>
+    </div>
+
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+    </div>
+    <script>window.form.render();</script>
+</form>

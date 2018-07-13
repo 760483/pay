@@ -1,0 +1,3623 @@
+---------------------------------------------------------------
+[ 2018-07-13T15:39:23+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：0.850899s][吞吐率：1.18req/s] [内存消耗：5,793.21kb] [文件加载：130]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.237179s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001956s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:39:24+08:00 ] 127.0.0.1 GET /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：0.458686s][吞吐率：2.18req/s] [内存消耗：3,916.23kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244050s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/demo\view\pay.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'time',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.133488s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:39:31+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：1.129011s][吞吐率：0.89req/s] [内存消耗：4,523.10kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.376676s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.159628s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '268',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '7',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467563',
+  'orderId' => '1531467563',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 'WEmUZltnEfmN8cZKayQkX8S8ejzgdUTi',
+  'sign' => 'f7f3e1256994b1bc09ab2fd0466dc0d6',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.142830s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.117063s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:39:31+08:00 ] 127.0.0.1 POST /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：1.465875s][吞吐率：0.68req/s] [内存消耗：3,814.58kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '217',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '7',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467563',
+  'orderId' => '1531467563',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 'WEmUZltnEfmN8cZKayQkX8S8ejzgdUTi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.249939s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:00+08:00 ] 127.0.0.1 GET /pay/admin/login.html
+[ info ] 127.0.0.1/pay/admin/login.html [运行时间：0.457608s][吞吐率：2.19req/s] [内存消耗：4,110.07kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.236504s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\pay\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\login.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000534s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:01+08:00 ] 127.0.0.1 GET /pay/admin/login/gt.html?t=1531467661025
+[ info ] 127.0.0.1/pay/admin/login/gt.html?t=1531467661025 [运行时间：0.386795s][吞吐率：2.59req/s] [内存消耗：3,675.56kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'gt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  't' => '1531467661025',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.236772s ]
+[ info ] [ RUN ] app\admin\controller\Login->gt[ C:\wamp64\www\pay\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:09+08:00 ] 127.0.0.1 GET /pay/admin/login.html
+[ info ] 127.0.0.1/pay/admin/login.html [运行时间：0.405608s][吞吐率：2.47req/s] [内存消耗：3,909.13kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.202966s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\pay\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\login.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001113s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:10+08:00 ] 127.0.0.1 GET /pay/admin/login/gt.html?t=1531467670095
+[ info ] 127.0.0.1/pay/admin/login/gt.html?t=1531467670095 [运行时间：0.290440s][吞吐率：3.44req/s] [内存消耗：3,675.61kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'gt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  't' => '1531467670095',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.251190s ]
+[ info ] [ RUN ] app\admin\controller\Login->gt[ C:\wamp64\www\pay\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:13+08:00 ] 127.0.0.1 POST /pay/admin/login.html?spm=
+[ info ] 127.0.0.1/pay/admin/login.html?spm= [运行时间：0.892279s][吞吐率：1.12req/s] [内存消耗：3,968.97kb] [文件加载：68]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '210',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  'spm' => '',
+  'username' => 'admin',
+  'password' => 'admin',
+  'geetest_challenge' => '45c48cce2e2d7fbdea1afc51c7c6ad26ec',
+  'geetest_validate' => 'd1b7d6ccd71e6c42b982761acff2c23e',
+  'geetest_seccode' => 'd1b7d6ccd71e6c42b982761acff2c23e|jordan',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.240270s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\pay\app\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:14+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.079739s][吞吐率：0.93req/s] [内存消耗：5,705.54kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244441s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000763s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:15+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ info ] 127.0.0.1/pay/admin/index/main.html?spm=m-94 [运行时间：0.527942s][吞吐率：1.89req/s] [内存消耗：3,966.68kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-94',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.237924s ]
+[ info ] [ RUN ] app\admin\controller\Index->main[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.main.html [ array (
+  0 => 'classuri',
+  1 => 'mysql_ver',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002317s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:17+08:00 ] 127.0.0.1 GET /pay/admin/goods/index.html?spm=m-119-121
+[ info ] 127.0.0.1/pay/admin/goods/index.html?spm=m-119-121 [运行时间：0.809901s][吞吐率：1.23req/s] [内存消耗：4,340.81kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-119-121',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244171s ]
+[ info ] [ RUN ] app\admin\controller\Goods->index[ C:\wamp64\www\pay\app\admin\controller\Goods.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\goods.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.133044s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:20+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.688395s][吞吐率：1.45req/s] [内存消耗：4,402.68kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.241338s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000557s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:21+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.704771s][吞吐率：1.42req/s] [内存消耗：4,360.78kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.249575s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000660s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:25+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.625208s][吞吐率：1.60req/s] [内存消耗：4,335.54kb] [文件加载：72]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.204013s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001294s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:29+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.850649s][吞吐率：1.18req/s] [内存消耗：3,971.26kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.278261s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.154397s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:36+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.665933s][吞吐率：1.50req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.253893s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001136s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:45+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.557157s][吞吐率：1.79req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.207604s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000927s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:48+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.706576s][吞吐率：1.42req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.238614s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.155223s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:56+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.566053s][吞吐率：1.77req/s] [内存消耗：3,751.66kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '4',
+  'info' => '扫码',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.207274s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:41:59+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.772947s][吞吐率：1.29req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.285104s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001016s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:02+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.687280s][吞吐率：1.46req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.240856s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.131006s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:09+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal [运行时间：0.728247s][吞吐率：1.37req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.245764s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.133601s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:13+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.687687s][吞吐率：1.45req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.233155s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.131234s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:17+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.644691s][吞吐率：1.55req/s] [内存消耗：3,751.61kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '4',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.247434s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:20+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.575956s][吞吐率：1.74req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.211744s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001252s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:24+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.729303s][吞吐率：1.37req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.273515s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001423s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:28+08:00 ] 127.0.0.1 GET /pay/admin/channel/edit.html?id=3&spm=m-114-118&open_type=modal
+[ info ] 127.0.0.1/pay/admin/channel/edit.html?id=3&spm=m-114-118&open_type=modal [运行时间：0.680553s][吞吐率：1.47req/s] [内存消耗：3,982.54kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'spm' => 'm-114-118',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.285735s ]
+[ info ] [ RUN ] app\admin\controller\Channel->edit[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.form.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.153078s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:36+08:00 ] 127.0.0.1 POST /pay/admin/channel/edit.html?id=3&spm=m-114-118&open_type=modal
+[ info ] 127.0.0.1/pay/admin/channel/edit.html?id=3&spm=m-114-118&open_type=modal [运行时间：0.575308s][吞吐率：1.74req/s] [内存消耗：3,869.21kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '225',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'spm' => 'm-114-118',
+  'open_type' => 'modal',
+  'name' => '支付宝转账',
+  'parentId' => '3',
+  'param' => 'cn.sanlicun.action.alipay',
+  'appId' => '1',
+  'key' => '123456',
+  'url' => '1',
+  'api' => 'app\\pay\\service\\AliPaySelf',
+  'channelRate' => '0.0000',
+  'status' => '1',
+  'notify_url' => '1',
+  'return_url' => '1',
+  'descript' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.280950s ]
+[ info ] [ RUN ] app\admin\controller\Channel->edit[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:39+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.645009s][吞吐率：1.55req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.243093s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001619s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:42+08:00 ] 127.0.0.1 GET /pay/admin/channel/edit.html?id=4&spm=m-114-118&open_type=modal
+[ info ] 127.0.0.1/pay/admin/channel/edit.html?id=4&spm=m-114-118&open_type=modal [运行时间：0.562393s][吞吐率：1.78req/s] [内存消耗：3,777.68kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+  'spm' => 'm-114-118',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.241625s ]
+[ info ] [ RUN ] app\admin\controller\Channel->edit[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.form.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.134123s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:50+08:00 ] 127.0.0.1 POST /pay/admin/channel/edit.html?id=4&spm=m-114-118&open_type=modal
+[ info ] 127.0.0.1/pay/admin/channel/edit.html?id=4&spm=m-114-118&open_type=modal [运行时间：0.568705s][吞吐率：1.76req/s] [内存消耗：3,869.21kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '211',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+  'spm' => 'm-114-118',
+  'open_type' => 'modal',
+  'name' => '微信转账',
+  'parentId' => '3',
+  'param' => 'cn.sanlicun.action.wechat',
+  'appId' => '1',
+  'key' => '1',
+  'url' => '1',
+  'api' => 'app\\pay\\service\\AliPaySelf',
+  'channelRate' => '0.8000',
+  'status' => '1',
+  'notify_url' => '1',
+  'return_url' => '1',
+  'descript' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.280474s ]
+[ info ] [ RUN ] app\admin\controller\Channel->edit[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:53+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.770404s][吞吐率：1.30req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.284429s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002109s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:42:57+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.669160s][吞吐率：1.49req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.246749s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002176s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:43:02+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.651613s][吞吐率：1.53req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.237938s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002163s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:43:46+08:00 ] 127.0.0.1 GET /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：0.476319s][吞吐率：2.10req/s] [内存消耗：3,920.24kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.242671s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/demo\view\pay.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'time',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.135135s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:09+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：13.847559s][吞吐率：0.07req/s] [内存消耗：5,202.77kb] [文件加载：87]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.386140s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.017043s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '269',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '5',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467826',
+  'orderId' => '1531467826',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 't7URYMbDh4ViAR7rCuc8CN90h7s7Pj361',
+  'sign' => '5fac652062447d951bcda727c633220a',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.148499s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.021054s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:09+08:00 ] 127.0.0.1 POST /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：14.198057s][吞吐率：0.07req/s] [内存消耗：3,814.59kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '218',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '5',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467826',
+  'orderId' => '1531467826',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 't7URYMbDh4ViAR7rCuc8CN90h7s7Pj361',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244152s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:13+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.095048s][吞吐率：0.91req/s] [内存消耗：5,705.76kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.239718s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002745s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:14+08:00 ] 127.0.0.1 GET /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：0.406997s][吞吐率：2.46req/s] [内存消耗：3,718.13kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.235038s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/demo\view\pay.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'time',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.128288s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:35+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：13.983215s][吞吐率：0.07req/s] [内存消耗：5,202.77kb] [文件加载：87]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.392477s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.016005s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '269',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '5',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467853',
+  'orderId' => '1531467853',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 't7URYMbDh4ViAR7rCuc8CN90h7s7Pj361',
+  'sign' => '9b7cb4961c779950989f9b6b58e2e09c',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.142987s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.007353s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:35+08:00 ] 127.0.0.1 POST /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：14.326312s][吞吐率：0.07req/s] [内存消耗：3,814.59kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '218',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+  'appId' => '5',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531467853',
+  'orderId' => '1531467853',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 't7URYMbDh4ViAR7rCuc8CN90h7s7Pj361',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.252416s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:36+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.076381s][吞吐率：0.93req/s] [内存消耗：5,705.76kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.239003s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002653s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:37+08:00 ] 127.0.0.1 GET /pay/demo/pay/index.html?spm=m-87-128
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-87-128 [运行时间：0.465512s][吞吐率：2.15req/s] [内存消耗：3,718.13kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-128',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.273298s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/demo\view\pay.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'time',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.149458s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:44:59+08:00 ] 127.0.0.1 GET /pay/admin/goods/index.html?spm=m-119-121
+[ info ] 127.0.0.1/pay/admin/goods/index.html?spm=m-119-121 [运行时间：0.647418s][吞吐率：1.54req/s] [内存消耗：4,139.70kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-119-121',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.248033s ]
+[ info ] [ RUN ] app\admin\controller\Goods->index[ C:\wamp64\www\pay\app\admin\controller\Goods.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\goods.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.134583s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:45:46+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ info ] 127.0.0.1/pay/admin/index/main.html?spm=m-94 [运行时间：0.433151s][吞吐率：2.31req/s] [内存消耗：3,771.73kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-94',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.205869s ]
+[ info ] [ RUN ] app\admin\controller\Index->main[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.main.html [ array (
+  0 => 'classuri',
+  1 => 'mysql_ver',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000666s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:45:47+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.672634s][吞吐率：1.49req/s] [内存消耗：4,188.62kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.256987s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001314s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:45:49+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.712898s][吞吐率：1.40req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.281906s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000695s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:45:55+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.673898s][吞吐率：1.48req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.243520s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001224s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:46:20+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/edit.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/edit.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.769746s][吞吐率：1.30req/s] [内存消耗：3,972.00kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.254418s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->edit[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.form.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.133800s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:46:30+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.717925s][吞吐率：1.39req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.257065s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.135035s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:46:37+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.631515s][吞吐率：1.58req/s] [内存消耗：3,751.61kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '4',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.240924s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:46:40+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.642171s][吞吐率：1.56req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.234119s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001582s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:46:56+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.811304s][吞吐率：1.23req/s] [内存消耗：3,781.70kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.283516s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.155796s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:47:02+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.656549s][吞吐率：1.52req/s] [内存消耗：3,751.61kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '2',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.250003s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:47:05+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.665057s][吞吐率：1.50req/s] [内存消耗：4,133.53kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.245508s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002110s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:54:14+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal [运行时间：0.872096s][吞吐率：1.15req/s] [内存消耗：3,782.51kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.325133s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.158522s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T15:54:20+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=6&spm=m-114-117&open_type=modal [运行时间：0.281817s][吞吐率：3.55req/s] [内存消耗：3,753.08kb] [文件加载：60]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '27',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '3',
+  'info' => '11',
+  'merCId' => '6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.237319s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:32+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：1.154146s][吞吐率：0.87req/s] [内存消耗：5,716.34kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.271291s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002509s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:33+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.639979s][吞吐率：1.56req/s] [内存消耗：4,144.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.239273s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001452s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:37+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.677268s][吞吐率：1.48req/s] [内存消耗：3,792.29kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.243826s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.131507s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:41+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.490210s][吞吐率：2.04req/s] [内存消耗：3,723.38kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '3',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.243931s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:44+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：0.887679s][吞吐率：1.13req/s] [内存消耗：5,716.13kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.205882s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000939s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:45+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ info ] 127.0.0.1/pay/admin/index/main.html?spm=m-94 [运行时间：0.475931s][吞吐率：2.10req/s] [内存消耗：3,771.73kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-94',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.233872s ]
+[ info ] [ RUN ] app\admin\controller\Index->main[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.main.html [ array (
+  0 => 'classuri',
+  1 => 'mysql_ver',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000792s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:47+08:00 ] 127.0.0.1 GET /pay/admin/goods/index.html?spm=m-119-121
+[ info ] 127.0.0.1/pay/admin/goods/index.html?spm=m-119-121 [运行时间：0.742867s][吞吐率：1.35req/s] [内存消耗：4,139.70kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-119-121',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.285977s ]
+[ info ] [ RUN ] app\admin\controller\Goods->index[ C:\wamp64\www\pay\app\admin\controller\Goods.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\goods.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.160809s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:49+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.553899s][吞吐率：1.81req/s] [内存消耗：4,188.62kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.203985s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001576s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:52+08:00 ] 127.0.0.1 GET /pay/admin/channel/index.html?spm=m-114-118
+[ info ] 127.0.0.1/pay/admin/channel/index.html?spm=m-114-118 [运行时间：0.639294s][吞吐率：1.56req/s] [内存消耗：4,154.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-118',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.244902s ]
+[ info ] [ RUN ] app\admin\controller\Channel->index[ C:\wamp64\www\pay\app\admin\controller\Channel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\channel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001239s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:53+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.558014s][吞吐率：1.79req/s] [内存消耗：4,144.12kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.212660s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001089s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:03:58+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.688533s][吞吐率：1.45req/s] [内存消耗：3,792.29kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.237337s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.141678s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:04:05+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.466327s][吞吐率：2.14req/s] [内存消耗：3,723.38kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '3',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.240090s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:04:08+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：0.981129s][吞吐率：1.02req/s] [内存消耗：5,716.13kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.212238s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000741s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:04:09+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ info ] 127.0.0.1/pay/admin/index/main.html?spm=m-94 [运行时间：0.430698s][吞吐率：2.32req/s] [内存消耗：3,771.73kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-94',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.207257s ]
+[ info ] [ RUN ] app\admin\controller\Index->main[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.main.html [ array (
+  0 => 'classuri',
+  1 => 'mysql_ver',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001306s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:05:03+08:00 ] 127.0.0.1 GET /pay/admin/order/index.html?spm=m-114-116
+[ info ] 127.0.0.1/pay/admin/order/index.html?spm=m-114-116 [运行时间：0.655485s][吞吐率：1.53req/s] [内存消耗：4,188.62kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-116',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.245121s ]
+[ info ] [ RUN ] app\admin\controller\Order->index[ C:\wamp64\www\pay\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\order.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001234s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:05:05+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.731325s][吞吐率：1.37req/s] [内存消耗：4,144.43kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.283620s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000796s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:28+08:00 ] 127.0.0.1 GET /pay/admin.html
+[ info ] 127.0.0.1/pay/admin.html [运行时间：0.967030s][吞吐率：1.03req/s] [内存消耗：5,716.74kb] [文件加载：128]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.208723s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000779s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:29+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.541732s][吞吐率：1.85req/s] [内存消耗：4,144.52kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.211803s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000519s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:31+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.784178s][吞吐率：1.28req/s] [内存消耗：3,792.33kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.274013s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.150433s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:34+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.568567s][吞吐率：1.76req/s] [内存消耗：3,828.69kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '1',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.283188s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:37+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.546629s][吞吐率：1.83req/s] [内存消耗：4,144.52kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.213347s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000740s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:41+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.585783s][吞吐率：1.71req/s] [内存消耗：3,792.33kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.203912s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.config.html [ array (
+  0 => 'classuri',
+  1 => 'vo',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.109778s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:44+08:00 ] 127.0.0.1 POST /pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal
+[ info ] 127.0.0.1/pay/admin/merchannel/config.html?id=5&spm=m-114-117&open_type=modal [运行时间：0.489044s][吞吐率：2.04req/s] [内存消耗：3,828.69kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'spm' => 'm-114-117',
+  'open_type' => 'modal',
+  'cId' => '4',
+  'info' => '',
+  'merCId' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.236766s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->config[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T16:06:46+08:00 ] 127.0.0.1 GET /pay/admin/merchannel/index.html?spm=m-114-117
+[ info ] 127.0.0.1/pay/admin/merchannel/index.html?spm=m-114-117 [运行时间：0.636476s][吞吐率：1.57req/s] [内存消耗：4,144.52kb] [文件加载：70]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'merchannel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=0ntgfid0r51vghl5o9srpp97f2; rows=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-114-117',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.246162s ]
+[ info ] [ RUN ] app\admin\controller\Merchannel->index[ C:\wamp64\www\pay\app\admin\controller\Merchannel.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\merchannel.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+  3 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000521s ]
+[ info ] [ LOG ] INIT File
