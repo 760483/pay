@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"C:\wamp64\www\pay/app/admin\view\merchannel.index.html";i:1531455599;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531455603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"C:\wamp64\www\pay/app/admin\view\merchannel.index.html";i:1532050395;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531474545;}*/ ?>
 <div class="ibox">
     
     <?php if(isset($title)): ?>
@@ -48,11 +48,11 @@
             <th class='text-center'>描述</th>
 			<th class='text-center'>创建时间</th>
 			<th class='text-center'>上次更改</th>
-		 
+			<th class='text-center'>域名或IP</th>		 
 			<th class='text-center'>key</th>
 			<th class='text-center'>rate</th>
 			<th class='text-center'>状态</th>
-			<th class='text-center'>上游</th>
+			<th class='text-center'>通道</th>
 			<th class='text-center'>操作</th>
         </tr>
         </thead>
@@ -77,7 +77,7 @@
 			<td class='text-center'><?php echo $vo['mDescript']; ?></td>        
             <td class="text-center nowrap"><?php echo format_time($vo['mCreateTime']); ?></td>
 			<td class="text-center nowrap"><?php echo format_time($vo['mUpdateTime']); ?></td>
-	 
+			<td class="text-center nowrap"><?php echo $vo['domain']; ?></td>
 			<td class="text-center nowrap"><?php echo $vo['mKey']; ?></td>
 			<td class="text-center nowrap"><?php echo $vo['mRate']; ?></td>
 			<td class="text-center nowrap"> 

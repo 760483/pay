@@ -117,6 +117,11 @@ return [
             'api/index/del_device',
             ['method' => 'get|post', 'after_behavior' => $afterBehavior]
         ],
+        // login 5b517b937a8b5
+        '5b517b937a8b5' => [
+            'api/index/login',
+            ['method' => 'get|post', 'after_behavior' => $afterBehavior]
+        ],
 
         // 接口Hash异常跳转
         '__miss__' => ['api/Miss/index'],

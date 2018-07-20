@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:46:"C:\wamp64\www\pay/app/demo\view\pay.index.html";i:1531467658;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531455603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:46:"C:\wamp64\www\pay/app/demo\view\pay.index.html";i:1532056801;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531474545;}*/ ?>
 <div class="ibox">
     
     <?php if(isset($title)): ?>
@@ -82,7 +82,7 @@
         <label class="layui-form-label">异步回调</label>
         <div class="layui-input-block">
              
-            <input  name="notifyUrl" value='http://www.baidu.com'
+            <input  name="notifyUrl" value='<?php echo $returnUrl; ?>'
                    required="required" title="异步回调" placeholder="异步回调" class="layui-input"> 
              
         </div>
@@ -131,8 +131,8 @@
 
     <div class="layui-form-item text-center">
      
-        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 保存数据</button>
-        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消提交吗？" data-close><i class="fa fa-close"></i> 取消编辑</button>
+        <button class="layui-btn" type='submit'><i class="fa fa-floppy-o"></i> 支付</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消提交吗？" data-close><i class="fa fa-close"></i> 取消</button>
     </div>
     <script>window.form.render();</script>
 </form>

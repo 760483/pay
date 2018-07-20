@@ -27,7 +27,7 @@ class JpushServer
         $content = array('mark' => $notify['linkId'], 'money' => $order['tradeMoney'], 'type' => $type);
 
 
-        $device = db('sys_device')->order('mTime  asc ')->find();
+        $device = db('sys_device')->where('userId'=>$order['uId'])->order('mTime  desc ')->find();
 
         if ($device == null) {
             return false;

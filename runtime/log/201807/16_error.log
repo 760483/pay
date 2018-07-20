@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[ 2018-07-16T09:19:04+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]致命错误: Cannot use object of type stdClass as array[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:11+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]致命错误: Cannot use object of type stdClass as array[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:24+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ''orderId'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:27+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ''orderId'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:39+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ''orderId'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:49+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:19:51+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:20:08+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:20:10+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:20:23+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2018-07-16T09:20:59+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ error ] [0]语法解析错误: syntax error, unexpected ')'[C:\wamp64\www\pay\app\api\controller\Index.php:35]

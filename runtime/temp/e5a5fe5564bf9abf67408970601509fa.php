@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:49:"C:\wamp64\www\pay/app/admin\view\login.index.html";i:1531455599;s:48:"C:\wamp64\www\pay\app\extra\view\admin.main.html";i:1531455603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:49:"C:\wamp64\www\pay/app/admin\view\login.index.html";i:1531474538;s:48:"C:\wamp64\www\pay\app\extra\view\admin.main.html";i:1531474545;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>

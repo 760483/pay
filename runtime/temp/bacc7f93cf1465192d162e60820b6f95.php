@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:48:"C:\wamp64\www\pay/app/admin\view\index.main.html";i:1531455599;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531455603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:48:"C:\wamp64\www\pay/app/admin\view\index.main.html";i:1531474538;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531474545;}*/ ?>
 <div class="ibox">
     
     <?php if(isset($title)): ?>

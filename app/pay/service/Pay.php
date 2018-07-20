@@ -64,12 +64,12 @@ namespace app\pay\service;
 			 
 			$data['orderId'] =$args['orderId'];
 			$data['uId']=$channelRet['mUId'];
-			$data['orderDate'] =$args['orderDate'];
+			$data['orderDate'] =time();
 			$data['tradeMoney'] =$args['orderMoney'];
 			$data['orderMoney'] =$args['orderMoney'];
-			$data['merMoney']=$args['orderMoney']*(1-$channelRet["mRate"]);
-			$data['channelMoney']=$args['orderMoney']*$channelRet["channelRate"];
-			$data['rateMoney']=$args['orderMoney']*($channelRet["mRate"]-$channelRet["channelRate"]);
+			$data['merMoney']=0;
+			$data['channelMoney']=0;
+			$data['rateMoney']=0;
 			$data['channelId']=$channelRet['cId'];
 			$data['returnUrl'] =$args['returnUrl'];
 			$data['notifyUrl'] =$args['notifyUrl'];

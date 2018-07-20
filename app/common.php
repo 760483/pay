@@ -376,8 +376,10 @@ function orderDb(){
 		->where(isAdmin(Db::name('PayOrder' )))
 		 ->field([ 
 		 'a.orderId',
+		 'a.channelOrderId',
 		 'a.id',
 		 'a.uId'=>'uId',
+		 'a.pay_url'=>'pay_url',
 		 'a.orderDate',
 		 'a.channelMoney',
 		 'a.merMoney',
@@ -389,6 +391,7 @@ function orderDb(){
 		 'a.cTime',
 		 'a.mTime',
 		 'a.status',
+		 'a.respStatus',
 		 'a.rateMoney',
 		 'a.bank',
 		 'a.extra',
@@ -414,6 +417,7 @@ function merchannelDb(){
 				->where(isAdmin(Db::name('PayMerchannel','b.uId')))
 				->field(['b.id'=>'mId',
 						'b.name'=>'mName',
+						'b.domain'=>'domain',
 						'b.parentId'=>'mParentId',
 						'b.uId'=>'uId',
 						'b.url'=>'mUrl',

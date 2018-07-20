@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:53:"C:\wamp64\www\pay/app/admin\view\merchannel.form.html";i:1531455599;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:53:"C:\wamp64\www\pay/app/admin\view\merchannel.form.html";i:1532050198;}*/ ?>
 <form class="layui-form layui-box" style='padding:25px 30px 20px 0' action="__SELF__" data-auto="true" method="post">
  
     <div class="layui-form-item">
@@ -55,6 +55,16 @@
             <input type="text" name="rate" value='<?php echo (isset($vo['rate']) && ($vo['rate'] !== '')?$vo['rate']:""); ?>' required="required" title="rate" placeholder="rate" class="layui-input">
         </div>
     </div>
+	
+	
+	
+	 <div class="layui-form-item">
+        <label class="layui-form-label">域名或IP</label>
+        <div class="layui-input-block">
+            <input type="text" name="domain" value='<?php echo (isset($vo['domain']) && ($vo['domain'] !== '')?$vo['domain']:""); ?>' required="required" title="domain" placeholder="域名或IP" class="layui-input">
+        </div>
+    </div>
+	
 	<div class="layui-form-item">
         <label class="layui-form-label">status</label>
         <div class="layui-input-block">

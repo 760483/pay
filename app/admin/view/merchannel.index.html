@@ -34,11 +34,11 @@
             <th class='text-center'>描述</th>
 			<th class='text-center'>创建时间</th>
 			<th class='text-center'>上次更改</th>
-		 
+			<th class='text-center'>域名或IP</th>		 
 			<th class='text-center'>key</th>
 			<th class='text-center'>rate</th>
 			<th class='text-center'>状态</th>
-			<th class='text-center'>上游</th>
+			<th class='text-center'>通道</th>
 			<th class='text-center'>操作</th>
         </tr>
         </thead>
@@ -63,7 +63,7 @@
 			<td class='text-center'>{$vo.mDescript }</td>        
             <td class="text-center nowrap">{$vo.mCreateTime|format_time}</td>
 			<td class="text-center nowrap">{$vo.mUpdateTime|format_time}</td>
-	 
+			<td class="text-center nowrap">{$vo.domain}</td>
 			<td class="text-center nowrap">{$vo.mKey}</td>
 			<td class="text-center nowrap">{$vo.mRate}</td>
 			<td class="text-center nowrap"> 

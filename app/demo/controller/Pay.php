@@ -14,6 +14,7 @@ use think\Db;
 use think\Exception;
 use think\Request;
 use think\Url;
+use controller\BasicAdmin;
 
 
 /**
@@ -23,7 +24,7 @@ use think\Url;
  * @author Anyon <zoujingli@qq.com>
  * @date 2017/07/10 18:13
  */
-class Pay extends Controller
+class Pay extends BasicAdmin
 {
 
 
@@ -35,7 +36,9 @@ class Pay extends Controller
     public function index()
     {
         if (!$this->request->isPost()) {
-            return view('', ['title' => 'demo', 'time' => time()]);
+			 $returnUrl = Url::build('/demo/pay/notify', '', '', Request::instance()->domain());
+			 
+            return view('', ['title' => 'demo', 'time' => time(),'returnUrl'=>$returnUrl]);
         } else {
 
             $data = input();
@@ -43,7 +46,12 @@ class Pay extends Controller
             ksort($preArr);
             $preArr = http_build_query($preArr);
             $data['sign'] = md5(urldecode($preArr));
-            $ret = HttpService::send_post(Url::build('/api/5a570d64428ca', '', '', Request::instance()->domain()), $data, 60, array('version' => 'v4.0'));
+			
+			
+			$data=urlencode(base64_encode(json_encode($data)));
+			
+			
+            $ret = HttpService::send_post(Url::build('/api/5a570d64428ca', '', '', Request::instance()->domain()),array('param'=>$data), 60, array('version' => 'v4.0'));
 
             $retUrl = Url::build('/pay/pay/qrPay', '', '', Request::instance()->domain());
             $data = json_decode(html_entity_decode($ret), true)['data'];
@@ -57,6 +65,27 @@ class Pay extends Controller
 
         }
     }
+	
+	  public function doc()
+    {
+        $this->title = 'desc';
+
+        return parent::_list( Db::name('api_desc'));
+    }
+	
+	
+	
+	
+	public function edit()
+    {
+        return $this->_form('api_desc', 'edit');
+    }
+	public function notify()
+    {
+        echo 'success';
+		exit;
+		}
+	 
 
 
 }

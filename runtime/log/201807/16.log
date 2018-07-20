@@ -1,0 +1,849 @@
+---------------------------------------------------------------
+[ 2018-07-16T09:16:51+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：1.131189s][吞吐率：0.88req/s] [内存消耗：4,506.88kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.385788s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.241863s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzODEwLCJvcmRlckRhdGUiOjE1MzE3MDM4MTAsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6Ijg3YWNhYmQ3Yzk1YmYxZjliYzliNDJmMThmMjkzYTU0In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.147717s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.151734s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:17:00+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.577843s][吞吐率：1.73req/s] [内存消耗：4,488.27kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.369268s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.007892s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzODE5LCJvcmRlckRhdGUiOjE1MzE3MDM4MTksIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6ImYwNTlkZDc2NjMzYmZkODE0N2Q0NjIxNmI1YzYyMGViIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.133980s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.011627s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:18:11+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.602809s][吞吐率：1.66req/s] [内存消耗：4,489.37kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.366030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.012883s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzODkwLCJvcmRlckRhdGUiOjE1MzE3MDM4OTAsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6Ijg0YTg3NzlkNjRiMzU1N2E4OGY5MzdmN2VlMWIzNDI2In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.139199s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.021829s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:18:32+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.646164s][吞吐率：1.55req/s] [内存消耗：4,489.46kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.397329s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.016988s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTExLCJvcmRlckRhdGUiOjE1MzE3MDM5MTEsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjJjMDRkOGQ4Nzk2NDE3MjhkMGZiYWZhOTQ4NmE0NDAyIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.154781s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.011324s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:04+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.771378s][吞吐率：1.30req/s] [内存消耗：4,566.86kb] [文件加载：78]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.440027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.021759s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTQ0LCJvcmRlckRhdGUiOjE1MzE3MDM5NDQsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjU5MjJiZDhjOGI4YjNkMWEwYThhMzhjN2YzZWMyZDFjIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.165602s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.030561s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:11+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.648483s][吞吐率：1.54req/s] [内存消耗：4,566.86kb] [文件加载：78]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.382593s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.013332s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTUwLCJvcmRlckRhdGUiOjE1MzE3MDM5NTAsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjNkMWQxMTM3OWYyZTU2ZjRhNTk1NGI2OWRiNjI5OTIyIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.149165s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.040422s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:24+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.436178s][吞吐率：2.29req/s] [内存消耗：4,067.58kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.322663s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.010537s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTY0LCJvcmRlckRhdGUiOjE1MzE3MDM5NjQsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjkzMjM4Y2IxNDA1ZGI2ZThkNjU0MGM1NWFiOWM4YTdmIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.044154s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:27+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.444543s][吞吐率：2.25req/s] [内存消耗：4,067.58kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.319286s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.010041s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTY2LCJvcmRlckRhdGUiOjE1MzE3MDM5NjYsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjAzMTE3ZGEwODk1ZDc2YjZhMTQwYTQ5MmUyMTA3ZThkIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.052852s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:39+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.424843s][吞吐率：2.35req/s] [内存消耗：4,067.58kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.315488s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.008751s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTc4LCJvcmRlckRhdGUiOjE1MzE3MDM5NzgsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjE0MDU5MmVlZjYyMjBlMTE5MzBhMzQxMzdjMTc5ZmI4In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.051081s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:49+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.497497s][吞吐率：2.01req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.379635s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.011005s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTg4LCJvcmRlckRhdGUiOjE1MzE3MDM5ODgsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjkyMDE4MzA3ZWRjYjMxODlmOWRjNGVmMGFiYjVhODYxIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.055055s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:19:51+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.518773s][吞吐率：1.93req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.372720s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.012285s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzAzOTkxLCJvcmRlckRhdGUiOjE1MzE3MDM5OTEsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjM2NzQ5ZjIyMmM1MDcyNzM4NTYwMjU2MTIwZDJmZDU2In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.070901s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:20:08+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.587766s][吞吐率：1.70req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.425564s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.019906s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MDA4LCJvcmRlckRhdGUiOjE1MzE3MDQwMDgsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjkzMmM0OGUwZDEwODAyYzcxMzVkNTk0NWMxNzExODI2In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.093851s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:20:10+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.616397s][吞吐率：1.62req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.423200s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.024240s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MDEwLCJvcmRlckRhdGUiOjE1MzE3MDQwMTAsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6ImRjMDc4NDE5ZDZlNGM4NGRlNjNjMmI1ODI1ZDlkNWJkIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.108046s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:20:23+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.668302s][吞吐率：1.50req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.469168s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.014692s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MDIyLCJvcmRlckRhdGUiOjE1MzE3MDQwMjIsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjA5MzNkNzQ5NGIxYzRkNzBkMmI2OWQzZGRmMTg3ZDZiIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.115934s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:20:59+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.616474s][吞吐率：1.62req/s] [内存消耗：4,067.45kb] [文件加载：67]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.470576s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.006240s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MDU4LCJvcmRlckRhdGUiOjE1MzE3MDQwNTgsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6ImQwZmE0YWE2NmY2YzQ4NmFkOTNmNTdhZjdiZGYzOWIxIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.094391s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:21:30+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.588818s][吞吐率：1.70req/s] [内存消耗：4,489.37kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.361820s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.020087s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MDg5LCJvcmRlckRhdGUiOjE1MzE3MDQwODksIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjllNDJkNjgwMTExMGQ3NmM0MzZkZmRmYTliN2Q0MzU5In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.124636s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.019759s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:21:55+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.625995s][吞吐率：1.60req/s] [内存消耗：4,489.37kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.377250s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.016171s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MTE0LCJvcmRlckRhdGUiOjE1MzE3MDQxMTQsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjUwYjMxNDZmZThkZGQxM2Q3ZjdhN2RkOTJlOTBmNjFiIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.149587s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.024641s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:22:16+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.640508s][吞吐率：1.56req/s] [内存消耗：4,489.41kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.414959s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.016698s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MTM1LCJvcmRlckRhdGUiOjE1MzE3MDQxMzUsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6Ijg1MTFhOTUzNDM2YTQwNDJmNWU5YjUxODdlNWY4NGI3In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.138581s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.013716s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:22:43+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：0.587456s][吞吐率：1.70req/s] [内存消耗：4,488.93kb] [文件加载：77]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.381569s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.004059s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MTYyLCJvcmRlckRhdGUiOjE1MzE3MDQxNjIsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6ImQyZDA2YzMxOTkxNWNhZWM1ZmE1ZDJmMTg5ZjkwODBmIn0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.141931s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.013030s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:06+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：5.039139s][吞吐率：0.20req/s] [内存消耗：5,194.72kb] [文件加载：87]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.371077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.015923s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '322',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJvcmRlcklkIjoxNTMxNzA0MTgxLCJvcmRlckRhdGUiOjE1MzE3MDQxODEsIm9yZGVyTW9uZXkiOiIwLjAxIiwiYXBwSWQiOjYsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoiMTIzIiwic2lnbiI6IjRmYWQyZTYxODBmOGYxMmExMTFjNTUyODVlMWUyYWQ4In0%3D',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.126987s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.015726s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:27+08:00 ] 127.0.0.1 GET /pay/admin
+[ info ] 127.0.0.1/pay/admin [运行时间：1.043186s][吞吐率：0.96req/s] [内存消耗：5,798.86kb] [文件加载：130]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4092.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=falp43l7dvchno05v1gu9c2hs3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.236240s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.002559s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:28+08:00 ] 127.0.0.1 GET /pay/admin/index/main.html?spm=m-94
+[ info ] 127.0.0.1/pay/admin/index/main.html?spm=m-94 [运行时间：0.559468s][吞吐率：1.79req/s] [内存消耗：3,966.63kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4092.1 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=falp43l7dvchno05v1gu9c2hs3',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-94',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.271736s ]
+[ info ] [ RUN ] app\admin\controller\Index->main[ C:\wamp64\www\pay\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/admin\view\index.main.html [ array (
+  0 => 'classuri',
+  1 => 'mysql_ver',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001913s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:29+08:00 ] 127.0.0.1 GET /pay/demo/pay/index.html?spm=m-129-130
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-129-130 [运行时间：0.385254s][吞吐率：2.60req/s] [内存消耗：3,920.55kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4092.1 Safari/537.36',
+  'referer' => 'http://127.0.0.1/pay/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=falp43l7dvchno05v1gu9c2hs3',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-129-130',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.199080s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/demo\view\pay.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'time',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.109638s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:35+08:00 ] 127.0.0.1 POST /pay/api/5a570d64428ca
+[ info ] 127.0.0.1/pay/api/5a570d64428ca [运行时间：4.564741s][吞吐率：0.22req/s] [内存消耗：5,195.03kb] [文件加载：87]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\ApiAuth @ [ RunTime:0.382848s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\api\behavior\RequestFilter @ [ RunTime:0.015730s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '402',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'version' => 'v4.0',
+)
+[ info ] [ PARAM ] array (
+  'param' => 'eyJzcG0iOiJtLTEyOS0xMzAiLCJhcHBJZCI6IjYiLCJvcmRlck1vbmV5IjoiMC4wMSIsIm9yZGVyRGF0ZSI6IjE1MzE3MDQyMDkiLCJvcmRlcklkIjoiMTUzMTcwNDIwOSIsInJldHVyblVybCI6Imh0dHA6XC9cL3d3dy5iYWlkdS5jb20iLCJub3RpZnlVcmwiOiJodHRwOlwvXC93d3cuYmFpZHUuY29tIiwicHJvZHVjdE5hbWUiOiJcdTZkNGJcdThiZDUiLCJiYW5rIjoie30iLCJrZXkiOiJXRW1VWmx0bkVmbU44Y1pLYXlRa1g4UzhlanpnZFVUaSIsInNpZ24iOiI4YzIwYWI4YTJhMzc2ZGE1NWE2ZmUyMzQzM2ExYTc4MiJ9',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.147894s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\wamp64\www\pay\app\api\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.021801s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:35+08:00 ] 127.0.0.1 POST /pay/demo/pay/index.html?spm=m-129-130
+[ info ] 127.0.0.1/pay/demo/pay/index.html?spm=m-129-130 [运行时间：4.934730s][吞吐率：0.20req/s] [内存消耗：3,814.90kb] [文件加载：63]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '217',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4092.1 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/pay/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=falp43l7dvchno05v1gu9c2hs3',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-129-130',
+  'appId' => '6',
+  'orderMoney' => '0.01',
+  'orderDate' => '1531704209',
+  'orderId' => '1531704209',
+  'returnUrl' => 'http://www.baidu.com',
+  'notifyUrl' => 'http://www.baidu.com',
+  'productName' => '测试',
+  'bank' => '{}',
+  'key' => 'WEmUZltnEfmN8cZKayQkX8S8ejzgdUTi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.271611s ]
+[ info ] [ RUN ] app\demo\controller\Pay->index[ C:\wamp64\www\pay\app\demo\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-16T09:23:38+08:00 ] 127.0.0.1 GET /pay/pay/pay/qrPay?url=HTTPS%3A%2F%2FQR.ALIPAY.COM%2FFKX05067KSSORLHIE9NQ26%3Ft%3D1531704253956
+[ info ] 127.0.0.1/pay/pay/pay/qrPay?url=HTTPS%3A%2F%2FQR.ALIPAY.COM%2FFKX05067KSSORLHIE9NQ26%3Ft%3D1531704253956 [运行时间：0.582433s][吞吐率：1.72req/s] [内存消耗：3,949.95kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp64\www\pay\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'pay',
+    2 => 'qrPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4092.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/pay/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; menu-style=full; s8aa4b123=falp43l7dvchno05v1gu9c2hs3',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'HTTPS://QR.ALIPAY.COM/FKX05067KSSORLHIE9NQ26?t=1531704253956',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.279131s ]
+[ info ] [ RUN ] app\pay\controller\Pay->qrPay[ C:\wamp64\www\pay\app\pay\controller\Pay.php ]
+[ info ] [ VIEW ] C:\wamp64\www\pay/app/pay\view\pay\qr_pay.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.155386s ]
+[ info ] [ LOG ] INIT File

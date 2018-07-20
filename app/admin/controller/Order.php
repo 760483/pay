@@ -11,6 +11,7 @@ use service\DataService;
 use service\NodeService;
 use service\ToolsService;
 use think\Db;
+use service\NotifyService;
 
 /**
  * 订单管理控制器
@@ -56,5 +57,85 @@ class Order extends BasicAdmin
         }
         $this->error("订单删除失败，请稍候再试！");
     }
+	
+	/**补单
+	*/
+	public function send(){
+		 $id = $this->request->post('id');
+		  $id = $this->request->post('id');
+		$order=db('pay_order')->where(array('id'=>$id))->find(); 
+		
+		 if($order==null){
+			 
+			 $this->error("订单不存在！");
+		 }
+		 
+		  if($order['status']<=0){
+			 
+			 $this->error("订单未支付！请强制补单");
+		 }
+		 
+		 $notify=NotifyService::notify( $id);
+		 
+		 if($notify){
+			  $this->success("补单成功",'');
+			 
+		 }else{
+			 
+			  $this->error("补单失败".$notify);
+		 }
+		 
+		 
+		
+	}
+	/**强制补单
+	*/
+	public function modify(){
+		 $id = $this->request->post('id');
+		$order=db('pay_order')->where(array('id'=>$id))->find(); 
+		
+		 if($order==null){
+			 
+			 $this->error("订单不存在！");
+		 }
+		 
+		  if($order['status']>0){
+			 
+			 $this->error("订单已经支付！");
+		 }
+		 
+		 $order['status']=1;
+		 
+		$ret=db('pay_order')->update($order);
+		
+		if($ret>0){
+			$notify=NotifyService::notify( $id);
+			
+		if($notify){
+			 $this->success("补单成功",'');
+			 
+		 }else{
+			 
+			  $this->error("补单失败");
+		 }
+		 
+			
+		}else{
+			 $this->error("补单失败！");
+			
+		}
+		 
+		 
+		 
+		 
+		 
+		 
+		
+	}
+	
+	
+	
+	
+	
 
 }

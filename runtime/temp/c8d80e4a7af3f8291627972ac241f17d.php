@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:49:"C:\wamp64\www\pay/app/admin\view\goods.index.html";i:1531455599;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531455603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:47:"C:\wamp64\www\pay/app/admin\view\sys.index.html";i:1531474534;s:51:"C:\wamp64\www\pay\app\extra\view\admin.content.html";i:1531474545;}*/ ?>
 <div class="ibox">
     
     <?php if(isset($title)): ?>
@@ -6,11 +6,11 @@
         <h5><?php echo $title; ?></h5>
         
 <div class="nowrap pull-right" style="margin-top:10px">
-    <button data-modal='<?php echo url("$classuri/add"); ?>' data-title="添加商品" class='layui-btn layui-btn-small'>
-        <i class='fa fa-plus'></i> 添加商品
+    <button data-modal='<?php echo url("$classuri/add"); ?>' data-title="添加表" class='layui-btn layui-btn-small'>
+        <i class='fa fa-plus'></i> 添加表
     </button>
     <button data-update data-field='delete' data-action='<?php echo url("$classuri/del"); ?>' class='layui-btn layui-btn-small layui-btn-danger'>
-        <i class='fa fa-remove'></i> 删除商品
+        <i class='fa fa-remove'></i> 删除表
     </button>
 </div>
 
@@ -30,9 +30,9 @@
 <!-- 表单搜索 开始 -->
 <form class="layui-form layui-form-pane form-search" action="__SELF__" onsubmit="return false" method="get">
     <div class="layui-form-item layui-inline">
-        <label class="layui-form-label">商品名</label>
+        <label class="layui-form-label">规格名</label>
         <div class="layui-input-inline">
-            <input name="username" value="<?php echo (\think\Request::instance()->get('username') ?: ''); ?>" placeholder="请输入商品名" class="layui-input">
+            <input name="username" value="<?php echo (\think\Request::instance()->get('username') ?: ''); ?>" placeholder="请输入规格名" class="layui-input">
         </div>
     </div>
 
@@ -75,12 +75,11 @@
                 <th class='list-table-check-td'>
                     <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
                 </th>
-                <th class='text-left nowrap'>商品名</th>
-                <th class='text-left nowrap'>手机号</th>
-                <th class='text-left nowrap'>电子邮箱</th>
-                <th class='text-left nowrap'>登录次数</th>
-                <th class='text-left nowrap'>最后登录</th>
-                <th class='text-left nowrap'>状态</th>
+                <th class='text-left nowrap'>规格名</th>
+                <th class='text-left nowrap'>版本</th>
+                <th class='text-left nowrap'>数据量</th>
+                <th class='text-left nowrap'>表类型</th>
+      
                 <th class='text-left nowrap'>操作</th>
             </tr>
         </thead>
@@ -88,51 +87,28 @@
             <?php foreach($list as $key=>$vo): ?>
             <tr>
                 <td class='list-table-check-td'>
-                    <input class="list-check-box" value='<?php echo $vo['id']; ?>' type='checkbox'/>
+                    <input class="list-check-box" value='<?php echo $vo['table_name']; ?>' type='checkbox'/>
                 </td>
                 <td class='text-left nowrap'>
-                    <?php echo $vo['id']; ?>
+                    <?php echo $vo['table_name']; ?>
                 </td>
-                <td class='text-left nowrap'>
-                    <?php echo (isset($vo['classes_id']) && ($vo['classes_id'] !== '')?$vo['classes_id']:"<span class='color-desc'>还没有设置手机号</span>"); ?>
+			  <td class='text-left nowrap'>
+                    <?php echo $vo['version']; ?>
                 </td>
-                <td class='text-left nowrap'>
-                    <?php echo (isset($vo['mail']) && ($vo['mail'] !== '')?$vo['mail']:"<span class='color-desc'>还没有设置邮箱</span>"); ?>
+				  <td class='text-left nowrap'>
+                    <?php echo $vo['table_rows']; ?>
                 </td>
-                <td class='text-left nowrap'>
-                    <?php echo (isset($vo['goods_name']) && ($vo['goods_name'] !== '')?$vo['goods_name']:"<span class='color-desc'>从未登录</span>"); ?>
+				  <td class='text-left nowrap'>
+                    <?php echo $vo['table_type']; ?>
                 </td>
-                <td class='text-left nowrap'>
-                    
-                </td>
-                <td class='text-left nowrap'>
-                    <?php if($vo['status'] == 1): ?>
-                    <span>已禁用</span>
-                    <?php elseif($vo['status'] == 0): ?>
-                    <span style="color:#090">使用中</span>
-                    <?php endif; ?>
-                </td>
+                  
                 <td class='text-left nowrap'>
                     <?php if(auth("$classuri/edit")): ?>
                     <span class="text-explode">|</span>
-                    <a data-modal='<?php echo url("$classuri/edit"); ?>?id=<?php echo $vo['id']; ?>' href="javascript:void(0)">编辑</a>
-                    <?php endif; if(auth("$classuri/auth")): ?>
-                    <span class="text-explode">|</span>
-                    <a data-modal='<?php echo url("$classuri/auth"); ?>?id=<?php echo $vo['id']; ?>' href="javascript:void(0)">授权</a>
-                    <?php endif; if(auth("$classuri/pass")): ?>
-                    <span class="text-explode">|</span>
-                    <a data-modal='<?php echo url("$classuri/pass"); ?>?id=<?php echo $vo['id']; ?>' href="javascript:void(0)">密码</a>
-                    <?php endif; if($vo['status'] == 1 and auth("$classuri/forbid")): ?>
-                    <span class="text-explode">|</span>
-                    <a data-update="<?php echo $vo['id']; ?>" data-field='status' data-value='0' data-action='<?php echo url("$classuri/forbid"); ?>'
-                       href="javascript:void(0)">禁用</a>
-                    <?php elseif(auth("$classuri/resume")): ?>
-                    <span class="text-explode">|</span>
-                    <a data-update="<?php echo $vo['id']; ?>" data-field='status' data-value='1' data-action='<?php echo url("$classuri/resume"); ?>'
-                       href="javascript:void(0)">启用</a>
+                    <a data-modal='<?php echo url("$classuri/edit"); ?>?table_name=<?php echo $vo['table_name']; ?>' href="javascript:void(0)">编辑</a>
                     <?php endif; if(auth("$classuri/del")): ?>
                     <span class="text-explode">|</span>
-                    <a data-update="<?php echo $vo['id']; ?>" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>'
+                    <a data-update="<?php echo $vo['table_name']; ?>" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>'
                        href="javascript:void(0)">删除</a>
                     <?php endif; ?>
                 </td>
